@@ -8,7 +8,7 @@ bootstrap: true
 comments: true
 disqus_identifier: https://www.richard-stanton.com/humidity-calculator/
 ---
-<!-- <link rel="stylesheet" id="bootstrap-css" href="http://www.richard-stanton.com/wp-content/themes/richardstanton/library/css/bootstrap.css?ver=1.0" type="text/css" media="all"> -->
+
 <script type="text/javascript">
 $( document ).ready(function() {
     var pastValue, pastSelectionStart, pastSelectionEnd;
@@ -65,16 +65,19 @@ Try to keep inside humidity in the range of 40-60%.
 
 The following calculator will work out the humidity of the outside air when it has been warmed up to the temperature of your home:
 
+
 <div class="container-fluid">
     <form id="formdata">
         <!-- outside -->
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Outside Temperature (&deg;C)</label>
                     <div class="input-group">
                         <input type="text" class="form-control" id="outsideTemp" placeholder="Outside Temperature">
-                        <div class="input-group-addon">&deg;C</div>
+                          <div class="input-group-append">
+                            <span class="input-group-text">&deg;C</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,19 +86,23 @@ The following calculator will work out the humidity of the outside air when it h
                     <label class="sr-only" for="exampleInputAmount">Outside Humidity (%)</label>
                     <div class="input-group">
                         <input type="text" class="form-control" id="outsideHumid" placeholder="Outside Humidity">
-                        <div class="input-group-addon">%</div>
+                        <div class="input-group-append">
+                            <span class="input-group-text">%</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- inside -->
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-4 col-md-offset-2">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Inside Temperature (&deg;C)</label>
                     <div class="input-group">
                         <input type="text" class="form-control" id="insideTemp" placeholder="Inside Temperature">
-                        <div class="input-group-addon">&deg;C</div>
+                        <div class="input-group-append">
+                            <span class="input-group-text">&deg;C</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,7 +111,9 @@ The following calculator will work out the humidity of the outside air when it h
                     <label class="sr-only" for="exampleInputAmount">Inside Humidity (%)</label>
                     <div class="input-group">
                         <input type="text" class="form-control" id="insideHumid" placeholder="Inside Humidity" readonly>
-                        <div class="input-group-addon">%</div>
+                        <div class="input-group-append">
+                            <span class="input-group-text">%</span>
+                        </div>
                     </div>
                 </div>
             </div>
