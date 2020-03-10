@@ -5,10 +5,11 @@ feature-img: "assets/img/pexels/book-glass.jpeg"
 # tags: [About, Archive]
 comments: true
 bootstrap: true
+description: Wordpress Member Navbar allows you to hide private pages from guests.
 ---
 
 <p style="text-align: center;" class="lead">
-	Wordpress Member Navbar allows you to hide private pages from guests.
+	{{ page.description }}
 </p>
 <p style="text-align: center;">
 	<a href="https://wordpress.org/plugins/member-private-navbar/" class="btn btn-primary btn-lg"

@@ -5,10 +5,11 @@ feature-img: "assets/img/pexels/book-glass.jpeg"
 # tags: [About, Archive]
 comments: true
 bootstrap: true
+description: WordPress HTML allows you to add custom HTML to both the post/page body and the head.
 ---
 
 <p style="text-align: center;" class="lead">
-	WordPress HTML allows you to add custom HTML to both the post/page body and the head.
+	{{ page.description }}
 </p>
 <p style="text-align: center;">
 	<a href="https://wordpress.org/plugins/custom-html-bodyhead/" class="btn btn-primary btn-lg"
