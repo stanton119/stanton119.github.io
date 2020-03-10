@@ -1,32 +1,14 @@
 ---
-layout: page
+layout: chrome-plugin
 title: Guitar Tabs for YouTube™
 feature-img: "assets/img/pexels/guitar2.jpeg"
 comments: true
 bootstrap: true
+icon: "assets/img/chrome-plugins/youtube-guitar-tab/LargeIcon.png"
+description: A simple Chrome plug-in that attempts to find the guitar tab for the current YouTube video.
+taken_down: true
+link: "https://chrome.google.com/webstore/detail/guitar-tabs-for-youtube/mjkcmmckommjkjgeghochanacldlipnc"
 ---
-
-<div class="alert alert-warning" style="text-align: center;">
-	This plug-in was taken down by Google...
-</div>
-
-<div class="container-fluid">
-	<div class="row justify-content-center align-items-center">
-		<div class="col-md-3">
-			<img src="/assets/img/chrome-plugins/youtube-guitar-tab/LargeIcon.png" alt="Guitar Tab Icon"
-				class="img-fluid" />
-		</div>
-		<div class="col-md-9">
-			<p style="text-align: center;" class="lead">
-				A simple Chrome plug-in that attempts to find the guitar tab for the current YouTube video.
-			</p>
-			<p style="text-align: center;">
-				<a href="https://chrome.google.com/webstore/detail/guitar-tabs-for-youtube/mjkcmmckommjkjgeghochanacldlipnc"
-					class="btn btn-primary btn-lg" target="blank">Download: Chrome Web Store</a>
-			</p>
-		</div>
-	</div>
-</div>
 
 Also available on [GitHub](https://github.com/stanton119/YouTube-Guitar-Tab)
 
@@ -76,7 +58,3 @@ javascript:(function()%7Bvar%20span%20%3D%20document.getElementById('eow-title')
 ```
 Now every time you want to get the tab for the current YouTube Video, simply click the new bookmark! A new web tab will
 appear with the search results for that video from 911Tabs.
-
----
-
-If you have any problems or questions please use the comments section at the bottom of the page.

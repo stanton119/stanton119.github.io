@@ -35,6 +35,12 @@ paginate_path: "blog/page:num"
 
 # PORTFOLIO
 collections:
+  chrome-plugins:
+    output: true
+    permalink: /:collection/:name
+  wordpress:
+    output: true
+    permalink: /:collection/:name
   portfolio:
     output: true
     permalink: /:collection/:name

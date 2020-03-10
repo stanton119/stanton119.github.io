@@ -1,32 +1,14 @@
 ---
-layout: page
+layout: chrome-plugin
 title: YouTube™ Ambilight
-feature-img: "assets/img/pexels/guitar2.jpeg"
+feature-img: "assets/img/pexels/ambilight.jpg"
 comments: true
 bootstrap: true
+icon: "assets/img/chrome-plugins/youtube-ambilight/LargeIcon.png"
+description: Make your YouTube experience more colourful!
+taken_down: true
+link: "https://chrome.google.com/webstore/detail/youtube-ambilight/nmgonncbpamnlmhkhpenhbnfnippaiei"
 ---
-
-<div class="alert alert-warning" style="text-align: center;">
-	This plug-in was taken down by Google...
-</div>
-
-<div class="container-fluid">
-	<div class="row justify-content-center align-items-center">
-		<div class="col-md-3">
-			<img src="/assets/img/chrome-plugins/youtube-ambilight/LargeIcon.png" alt="Guitar Tab Icon"
-				class="img-fluid" />
-		</div>
-		<div class="col-md-9">
-			<p style="text-align: center;" class="lead">
-				Make your YouTube experience more colourful!
-			</p>
-			<p style="text-align: center;">
-				<a href="https://chrome.google.com/webstore/detail/youtube-ambilight/nmgonncbpamnlmhkhpenhbnfnippaiei"
-					class="btn btn-primary btn-lg" target="blank">Download: Chrome Web Store</a>
-			</p>
-		</div>
-	</div>
-</div>
 
 Also available on [GitHub](https://github.com/stanton119/YouTube-Ambilight)
 
@@ -82,7 +64,3 @@ If you have any more videos that work well, get in contact using the comments se
 * <a title="Incubus - Nice To Know You" href="https://www.youtube.com/watch?v=Qf_7mEPMIAc" target="_blank">Incubus - Nice To Know You</a>
 * <a title="Audioslave - Cochise" href="https://www.youtube.com/watch?v=KDMvN45sjo4" target="_blank">Audioslave - Cochise</a>
 * <a title="Jason Derulo - Wiggle" href="https://www.youtube.com/watch?v=hiP14ED28CA" target="_blank">Jason Derulo - Wiggle</a>
-
----
-
-If you have any problems or questions please use the comments section at the bottom of the page.
