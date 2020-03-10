@@ -39,7 +39,7 @@ To reset, just wait 4 beats or a couple seconds.
     <div id="myChart" class="row" style="position: absolute">
     </div>
 </div>
-s
+
 <script type="text/javascript" charset="utf-8">
     construct_graph();
     // event handlers
