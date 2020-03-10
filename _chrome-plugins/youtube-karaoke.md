@@ -31,11 +31,11 @@ video
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-karaoke/KaraokeInstall1.png" alt="Karaoke 1"
 				class="img-fluid img-thumbnail" />
 		</div>
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-karaoke/KaraokeInstall2.png" alt="Karaoke 2"
 				class="img-fluid img-thumbnail" />
 		</div>

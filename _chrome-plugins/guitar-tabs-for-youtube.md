@@ -31,11 +31,11 @@ window.
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-guitar-tab/GuitarInstall1.png" alt="Guitar Tab 1"
 				class="img-fluid img-thumbnail" />
 		</div>
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-guitar-tab/GuitarInstall2.png" alt="Guitar Tab 2"
 				class="img-fluid img-thumbnail" />
 		</div>

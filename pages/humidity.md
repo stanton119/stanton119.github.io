@@ -70,7 +70,7 @@ The following calculator will work out the humidity of the outside air when it h
     <form id="formdata">
         <!-- outside -->
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Outside Temperature (&deg;C)</label>
                     <div class="input-group">
@@ -81,7 +81,7 @@ The following calculator will work out the humidity of the outside air when it h
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Outside Humidity (%)</label>
                     <div class="input-group">
@@ -95,7 +95,7 @@ The following calculator will work out the humidity of the outside air when it h
         </div>
         <!-- inside -->
         <div class="row justify-content-center">
-            <div class="col-md-4 col-md-offset-2">
+            <div class="col-4 col-offset-2">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Inside Temperature (&deg;C)</label>
                     <div class="input-group">
@@ -106,7 +106,7 @@ The following calculator will work out the humidity of the outside air when it h
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Inside Humidity (%)</label>
                     <div class="input-group">

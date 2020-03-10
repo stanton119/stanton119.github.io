@@ -24,7 +24,7 @@ For the best effect try it with movie trailers and music videos, or any video wh
 
 <div class="container-fluid">
 	<div class="row justify-content-center align-items-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YQeDy260tL8"
 					allowfullscreen></iframe>
@@ -42,7 +42,7 @@ For the best effect try it with movie trailers and music videos, or any video wh
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/chrome-plugins/youtube-ambilight/On.png" alt="On button"
 				class="img-fluid img-thumbnail" />

@@ -11,12 +11,12 @@ bootstrap: true
 <div class="container-fluid">
     {% for item in site.wordpress %}
     <div class="row justify-content-center align-items-center">
-        <!-- <div class="col-md-3">
+        <!-- <div class="col-3">
             <a href="{{ item.url | relative_url }}">
                 <img src="{{ item.icon | relative_url }}" alt="Icon" class="img-fluid" />
             </a>
         </div> -->
-        <div class="col-md-4">
+        <div class="col-4">
             <a href="{{ item.url | relative_url }}">
                 <h4 style="text-align: left;">
                     {{ item.title }}

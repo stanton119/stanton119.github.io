@@ -18,7 +18,7 @@ description: WordPress HTML allows you to add custom HTML to both the post/page 
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/wordpress/wordpress-html/screenshot-1.png" alt="Custom Fields"
 					class="img-fluid img-thumbnail" />
@@ -57,7 +57,7 @@ To install:
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/wordpress/wordpress-html/screenshot-2.png" alt="Body tags" class="img-fluid img-thumbnail" />
 			</p>
@@ -86,7 +86,7 @@ below:
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/wordpress/wordpress-html/screenshot-3.png" alt="Custom fields"
 		class="img-fluid img-thumbnail" />

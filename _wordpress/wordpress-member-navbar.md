@@ -19,11 +19,11 @@ description: Wordpress Member Navbar allows you to hide private pages from guest
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
+		<div class="col-6">
 			<img class="img-fluid img-thumbnail" src="/assets/img/wordpress/wordpress-member-navbar/screenshot-1.png"
 				alt="No login link">
 		</div>
-		<div class="col-md-6">
+		<div class="col-6">
 			<img class="img-fluid img-thumbnail" src="/assets/img/wordpress/wordpress-member-navbar/screenshot-2.png"
 				alt="Login link">
 		</div>
@@ -57,7 +57,7 @@ To add private pages to the menu use the search box as illustrated below:
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/wordpress/wordpress-member-navbar/screenshot-3.png" alt="Adding private pages"
 					class="img-fluid img-thumbnail" />
@@ -74,7 +74,7 @@ window:
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-10">
+		<div class="col-10">
 			<p style="text-align: center;">
 				<img src="/assets/img/wordpress/wordpress-member-navbar/screenshot-4.png" alt="Private pages"
 		class="img-fluid img-thumbnail" />

@@ -31,11 +31,11 @@ Usage based on a single video playing. CPU usage reduced by ~50%
 
 <div class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-radio/Chrome-Off.png" alt="Radio Mode 1"
 				class="img-fluid img-thumbnail" />
 		</div>
-		<div class="col-md-6">
+		<div class="col-6">
 			<img src="/assets/img/chrome-plugins/youtube-radio/Chrome-On.png" alt="Radio Mode 2"
 				class="img-fluid img-thumbnail" />
 		</div>
