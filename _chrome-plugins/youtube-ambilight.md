@@ -4,7 +4,7 @@ title: YouTube™ Ambilight
 feature-img: "assets/img/pexels/ambilight.jpg"
 comments: true
 bootstrap: true
-icon: "assets/img/chrome-plugins/youtube-ambilight/LargeIcon.png"
+product-icon: "assets/img/chrome-plugins/youtube-ambilight/LargeIcon.png"
 description: Make your YouTube experience more colourful!
 taken_down: true
 link: "https://chrome.google.com/webstore/detail/youtube-ambilight/nmgonncbpamnlmhkhpenhbnfnippaiei"

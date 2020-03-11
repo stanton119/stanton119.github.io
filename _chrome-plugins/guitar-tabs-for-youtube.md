@@ -4,7 +4,7 @@ title: Guitar Tabs for YouTube™
 feature-img: "assets/img/pexels/guitar2.jpeg"
 comments: true
 bootstrap: true
-icon: "assets/img/chrome-plugins/youtube-guitar-tab/LargeIcon.png"
+product-product-icon: "assets/img/chrome-plugins/youtube-guitar-tab/LargeIcon.png"
 description: A simple Chrome plug-in that attempts to find the guitar tab for the current YouTube video.
 taken_down: true
 link: "https://chrome.google.com/webstore/detail/guitar-tabs-for-youtube/mjkcmmckommjkjgeghochanacldlipnc"

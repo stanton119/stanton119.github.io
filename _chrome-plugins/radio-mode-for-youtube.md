@@ -4,7 +4,7 @@ title: Radio Mode for YouTube™
 feature-img: "assets/img/pexels/radio.jpg"
 comments: true
 bootstrap: true
-icon: "assets/img/chrome-plugins/youtube-radio/LargeIcon.png"
+product-icon: "assets/img/chrome-plugins/youtube-radio/LargeIcon.png"
 description: A simple Chrome plug-in that replaces YouTube videos with just the audio to save CPU.
 taken_down: false
 link: "https://chrome.google.com/webstore/detail/hhbjppdghagniamelnodbhnlbnpmipnm/"

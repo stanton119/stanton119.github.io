@@ -4,7 +4,7 @@ title: Karaoke Mode for YouTube™
 feature-img: "assets/img/pexels/karaoke2.jpeg"
 comments: true
 bootstrap: true
-icon: "assets/img/chrome-plugins/youtube-karaoke/LargeIcon.png"
+product-icon: "assets/img/chrome-plugins/youtube-karaoke/LargeIcon.png"
 description: A simple Chrome plug-in that attempts to remove the vocals from YouTube videos.
 taken_down: true
 link: "https://chrome.google.com/webstore/detail/karaoke-mode-for-youtube/ghnaglacgepiijbbkpfdoncgfadgkdck"

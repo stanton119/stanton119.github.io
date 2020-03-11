@@ -2,7 +2,7 @@
 layout: page
 title : TapTempo
 feature-img: "assets/img/pexels/music.jpg"
-icon: "assets/img/music/taptempo/icon.png"
+product-icon: "assets/img/music/taptempo/icon.png"
 description: Accurately displays the tempo to your tap!
 link: "https://www.macupdate.com/app/mac/53128/taptempo"
 bootstrap: true
@@ -12,7 +12,7 @@ comments: true
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
         <div class="col-3">
-            <img src="{{ page.icon | relative_url }}" alt="{{ page.title }} Icon" class="img-fluid" />
+            <img src="{{ page.product-icon | relative_url }}" alt="{{ page.title }} Icon" class="img-fluid" />
         </div>
         <div class="col-9">
             <p style="text-align: center;" class="lead">

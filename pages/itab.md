@@ -1,8 +1,9 @@
 ---
 layout: page
-title : iTab
+title: iTab
+permalink: /itab/
 feature-img: "assets/img/pexels/music.jpg"
-icon: "assets/img/music/itab/icon.png"
+product-icon: "assets/img/music/itab/icon.png"
 description: iTab is the quickest way to find guitar tabs for the songs you love.
 link: "https://itunes.apple.com/us/app/itab/id1058616926?ls=1&mt=12"
 bootstrap: true
@@ -12,7 +13,7 @@ comments: true
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
         <div class="col-3">
-            <img src="{{ page.icon | relative_url }}" alt="{{ page.title }} Icon" class="img-fluid" />
+            <img src="{{ page.product-icon | relative_url }}" alt="{{ page.title }} Icon" class="img-fluid" />
         </div>
         <div class="col-9">
             <p style="text-align: center;" class="lead">
@@ -259,8 +260,6 @@ Apple's process isn't entirely clear, but there is a better guide available on t
         </div>
     </div>
 </div>
-
-<p style="text-align: center;">If your question isn't answered by any of the above, please use the comments below or <a href="mailto:richard@richard-stanton.com?Subject=iTab">please contact me</a>.</p>
 
 ---
 
