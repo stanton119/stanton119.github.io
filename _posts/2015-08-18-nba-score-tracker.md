@@ -11,7 +11,7 @@ thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
 <meta http-Equiv="Expires" Content="0">
 <link rel="stylesheet" id="tracker-css" href="/assets/sportstracker/css/style.css" type="text/css" media="all">
 <script src="/assets/sportstracker/js/c3.js"></script>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <!-- Load c3.css -->
 <link href="/assets/sportstracker/css/c3.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
