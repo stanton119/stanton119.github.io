@@ -1,0 +1,246 @@
+<html>
+<head>
+	<title>Premier League Score Tracker</title>
+	<link rel="stylesheet" id="bootstrap-css" href="http://www.richard-stanton.com/wp-content/themes/richardstanton/library/css/bootstrap.css?ver=1.0" type="text/css" media="all">
+	<link rel="stylesheet" id="wpbs-style-css" href="http://www.richard-stanton.com/wp-content/themes/richardstanton/style.css?ver=1.0" type="text/css" media="all">
+	
+	<meta http-Equiv="Cache-Control" Content="no-cache">
+    <meta http-Equiv="Pragma" Content="no-cache">
+    <meta http-Equiv="Expires" Content="0">
+	<link rel="stylesheet" id="tracker-css" href="http://www.richard-stanton.com/files/sportstracker/css/style.css" type="text/css" media="all">
+	<script src="http://www.richard-stanton.com/files/sportstracker/js/c3.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<!-- Load c3.css -->
+	<link href="http://www.richard-stanton.com/files/sportstracker/css/c3.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body style="padding-top: 0px;">
+	<div id="myChart"></div>
+	<div id="teamtable">
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-5">
+				<div class="btn-group btn-group-lg" role="group" aria-label="...">
+					<button id="showall" type="button" class="btn btn-default">Show all</button>
+					<button id="hideall" type="button" class="btn btn-default">Hide all</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	// team filtering
+	var filter = [];
+	var teams = [];
+	
+	// load json objects
+	var gameData, colourData;
+	$.when(
+		$.getJSON( "http://www.richard-stanton.com/files/sportstracker/EPL/resultsEPL.json", function( data ) {
+			gameData = data;
+		}),
+		$.getJSON( "http://www.richard-stanton.com/files/sportstracker/team-data.json", function( data ) {
+			colourData = data;
+		})
+	).then(function() {
+		// when both available
+	    if (colourData) {
+			// create teams table
+			constructTeamTable(colourData["EPL"]);
+	    }
+	    else {
+	        // Request for web data didn't work, handle it
+	    }
+	    if (gameData) {
+			// display data in chart
+			constructData(gameData);
+	    }
+	    else {
+	        // Request for graphic data didn't work, handle it
+	    }
+	});
+	
+	// convert name to ID/filename
+	function convertNameToID(name) {
+	    name = name.replace(/ /g,"-");
+		name = name.toLowerCase();
+	    return name;
+	}
+	
+	// enable show/hide all buttons
+	$('#showall').click(function(){
+		toggleAll(1);
+	});
+	$('#hideall').click(function(){
+		toggleAll(0);
+	});
+	
+	function toggleAll(onOff) {
+		// change class, change chart
+		if (onOff) {
+			$('div#teamtable').find("img").attr('class', 'img-thumbnail iconOn');
+			chart.show(teams);
+			for (i=0; i<teams.length; i++)
+				filter[teams[i]] = 1;
+		} else {
+			$('div#teamtable').find("img").attr('class', 'img-thumbnail iconOff');
+			chart.hide(teams);
+			for (i=0; i<teams.length; i++)
+				filter[teams[i]] = 0;
+		}
+	}
+
+	// chart colours
+	var teamColours = [];
+	// create team table
+	function constructTeamTable(data) {
+
+		// construct selection table + callbacks
+		var rowsize = 10;
+		var row=0;
+		var col=0;
+		var content = "";
+	
+		// for each row
+		$.each( data, function( key, val ) {
+			// on by default
+			filter[key]=1;
+		
+			// append team and colours
+			teamColours[key] = val[0];
+		
+			// add to team names
+			teams.push(key);
+					
+			// generate table
+			if (col==0) {
+				// alternate row backgrounds
+				if (row%2==0) {
+					content += '<div class="row rowEven">';
+				} else {
+					content += '<div class="row rowOdd">';
+				}
+				// off set first column
+				// content += '<div class="col-xs-2 col-xs-offset-1" id="Div'+convertNameToID(key)+'" style="background-color: '+teamColours[key][0]+'"><img src="img/nba/'+convertNameToID(key)+'.svg" class="img-thumbnail iconOn">'+key+'</div>';
+				content += '<div class="col-xs-1 col-xs-offset-1" id="Div'+convertNameToID(key)+'"><img src="http://www.richard-stanton.com/files/sportstracker/img/epl/'+convertNameToID(key)+'.svg" class="img-thumbnail iconOn">'+key+'</div>';
+			} else {
+				// output all table elements
+				// content += '<div class="col-xs-2" id="Div'+convertNameToID(key)+'" style="background-color: '+teamColours[key][0]+'"><img src="img/nba/'+convertNameToID(key)+'.svg" class="img-thumbnail iconOn">'+key+'</div>';
+				content += '<div class="col-xs-1" id="Div'+convertNameToID(key)+'"><img src="http://www.richard-stanton.com/files/sportstracker/img/epl/'+convertNameToID(key)+'.svg" class="img-thumbnail iconOn">'+key+'</div>';
+			}
+			// next row?
+			col++;
+			if (col>rowsize-1) {
+				content += '</div>';
+				col=0;
+				row++;
+			}
+		});
+		$("#teamtable").append(content);
+
+		// add callback for each diff
+		$.each( data, function( key, val ) {
+			// add callback functions
+			$('#Div'+convertNameToID(key)).click(function(){
+				filter[key] = 1-filter[key];
+				//change class to off/on, toggle display
+				if (filter[key]) {
+					$('#Div'+convertNameToID(key)).find("img:first").attr('class', 'img-thumbnail iconOn');
+					chart.show(key);
+				} else {
+					$('#Div'+convertNameToID(key)).find("img:first").attr('class', 'img-thumbnail iconOff');
+					chart.hide(key);
+				}
+			});
+		
+			// add focusing
+			$('#Div'+convertNameToID(key)).mouseover(function(){
+				chart.focus(key);
+			});
+			$('#Div'+convertNameToID(key)).mouseout(function(){
+				chart.revert();
+			});
+		});
+	}
+	
+	
+	// chart object
+	var chart;
+	// append chart data
+	var chartData = [];
+	var chartColours = [];
+	function constructData(data) {
+		if (!data)
+			return 0;
+		
+		// for each row - prepare data + colours
+		var row = 0;
+		$.each( data, function( key, val ) {
+			// format data
+			// make into single array
+			var chartDataTemp = [];
+			chartDataTemp.push(val.team);
+			for (i=0; i<val.value.length; i++)
+				chartDataTemp.push(val.value[i]);
+			// add to chart data
+			chartData.push(chartDataTemp);
+			
+			// make colours array
+			chartColours.push('#'+teamColours[val.team]);
+			row++;
+		});
+		
+		// display chart + options
+		chart = c3.generate({
+			bindto: '#myChart',
+			size: {
+				height: 600
+			},
+			data: {
+				columns: chartData
+			},
+			color: {
+				pattern: chartColours
+			},
+			axis: {
+				x: {
+					label: {
+						text: 'Games played',
+						position: 'outer-center'
+					}
+				},
+				y: {
+					min: 0,
+					padding: {bottom:3},
+					label: {
+						text: 'Points',
+						position: 'outer-middle'
+					}
+				}
+			},
+			grid: {
+				x: {
+					// number of games in season
+					lines: [{value: 38}],
+					show: true
+				},
+				y: {
+					show: true
+				}
+			},
+			legend: {
+				show: false
+			},
+			tooltip: {
+				format: {
+					title: function (d) { return 'Games played: ' + d; }
+				}
+			}
+		});
+	}
+	</script>
+
+</body>
+</html>

@@ -1,17 +1,19 @@
 ---
 layout: post
 title: NBA Tracker 2014/15
-# tags: [Test, Ipsum, Markdown, Portfolio]
+bootstrap: true
+feature-img: "assets/sportstracker/img/NBAScreenshot.png"
+thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
 ---
 
 <meta http-Equiv="Cache-Control" Content="no-cache">
 <meta http-Equiv="Pragma" Content="no-cache">
 <meta http-Equiv="Expires" Content="0">
-<link rel="stylesheet" id="tracker-css" href="https://www.richard-stanton.com/files/sportstracker/css/style.css" type="text/css" media="all">
-<script src="https://www.richard-stanton.com/files/sportstracker/js/c3.js"></script>
+<link rel="stylesheet" id="tracker-css" href="/assets/sportstracker/css/style.css" type="text/css" media="all">
+<script src="/assets/sportstracker/js/c3.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <!-- Load c3.css -->
-<link href="https://www.richard-stanton.com/files/sportstracker/css/c3.css" rel="stylesheet" type="text/css">
+<link href="/assets/sportstracker/css/c3.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 # NBA Tracker 2014/15
@@ -19,36 +21,43 @@ title: NBA Tracker 2014/15
 Wins against games played.
 
 <div id="myChart"></div>
+
 <div class="container-fluid">
     <div class="row" id="teamtable">
-        <div class="col-md-6" id="westTable">
+        <div class="col-6 justify-content-center" id="westTable">
         </div>
-        <div class="col-md-6" id="eastTable">
+        <div class="col-6 justify-content-center" id="eastTable">
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-2 col-xs-offset-2">
-            <div class="text-center">
-                <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                    <button id="western" type="button" class="btn btn-default">West</button>
-                </div>
-            </div>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <p style="text-align: center;">
+                <button id="western" type="button" class="btn btn-outline-primary">West</button>
+            </p>
         </div>
-        <div class="col-xs-4">
-            <div class="text-center">
-                <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                    <button id="showall" type="button" class="btn btn-default">Show all</button>
-                    <button id="hideall" type="button" class="btn btn-default">Hide all</button>
-                </div>
-            </div>
+        <div class="col-4">
+            <p style="text-align: center;">
+                <button id="showall" type="button" class="btn btn-outline-primary">Show all</button>
+                <button id="hideall" type="button" class="btn btn-outline-primary">Hide all</button>
+            </p>
         </div>
-        <div class="col-xs-2">
-            <div class="text-center">
-                <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                    <button id="eastern" type="button" class="btn btn-default">East</button>
-                </div>
-            </div>
+        <div class="col-2">
+            <p style="text-align: center;">
+                <button id="eastern" type="button" class="btn btn-outline-primary">East</button>
+            </p>
         </div>
+    </div>
+</div>
+
+<br>
+<div class="card">
+    <div class="card-header">
+        Info
+    </div>
+    <div class="card-body">
+        <p>Images from: <a href="http://teamcolors.arc90.com" target="_blank">http://teamcolors.arc90.com</a></p>
+        <p>Data from: <a href="http://www.basketball-reference.com"
+                target="_blank">http://www.basketball-reference.com</a></p>
     </div>
 </div>
 
@@ -63,13 +72,13 @@ Wins against games played.
     // load json objects
     var gameData, colourData, conferenceData;
     $.when(
-        $.getJSON("https://www.richard-stanton.com/files/sportstracker/NBA/results2015.json", function (data) {
+        $.getJSON("/assets/sportstracker/NBA/results2015.json", function (data) {
             gameData = data;
         }),
-        $.getJSON("https://www.richard-stanton.com/files/sportstracker/team-data.json", function (data) {
+        $.getJSON("/assets/sportstracker/team-data.json", function (data) {
             colourData = data;
         }),
-        $.getJSON("https://www.richard-stanton.com/files/sportstracker/NBA/conference.json", function (data) {
+        $.getJSON("/assets/sportstracker/NBA/conference.json", function (data) {
             conferenceData = data;
         })
     ).then(function () {
@@ -226,18 +235,18 @@ Wins against games played.
             if (eastCol == 0) {
                 // alternate row backgrounds
                 if (eastRow % 2 == 0) {
-                    eastTable += '<div class="row rowEven">';
+                    eastTable += '<div class="row rowEven justify-content-center">';
                 } else {
-                    eastTable += '<div class="row rowOdd">';
+                    eastTable += '<div class="row rowOdd justify-content-center">';
                 }
                 // off set first column
-                eastTable += '<div class="col-xs-2 col-xs-offset-1"';
+                eastTable += '<div class="col-2"';
             } else {
                 // output all table elements
-                eastTable += '<div class="col-xs-2"';
+                eastTable += '<div class="col-2"';
             }
 
-            eastTable += ' id="Div' + teamID + '"><img src="https://www.richard-stanton.com/files/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
+            eastTable += ' id="Div' + teamID + '"><img src="/assets/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
 
             // next row?
             eastCol++;
@@ -251,18 +260,19 @@ Wins against games played.
             if (westCol == 0) {
                 // alternate row backgrounds
                 if (westRow % 2 == 0) {
-                    westTable += '<div class="row rowEven">';
+                    westTable += '<div class="row rowEven justify-content-center">';
                 } else {
-                    westTable += '<div class="row rowOdd">';
+                    westTable += '<div class="row rowOdd justify-content-center">';
                 }
                 // off set first column
-                westTable += '<div class="col-xs-2 col-xs-offset-1"';
+                westTable += '<div class="col-2"';
             } else {
                 // output all table elements
-                westTable += '<div class="col-xs-2"';
+                westTable += '<div class="col-2"';
             }
 
-            westTable += ' id="Div' + teamID + '"><img src="https://www.richard-stanton.com/files/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
+            westTable += ' id="Div' + teamID + '"><img src="/assets/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
+            // westTable += ' id="Div' + teamID + '">' + teamID + '</div>';
 
             // next row?
             westCol++;
@@ -350,10 +360,3 @@ Wins against games played.
         });
     }
 </script>
-
-[panel type="info" heading="Info"]
-Updated daily
-
-Images from: <a href="http://teamcolors.arc90.com" target="_blank">http://teamcolors.arc90.com</a>
-
-Data from: <a href="http://www.basketball-reference.com" target="_blank">http://www.basketball-reference.com</a>[/panel]
