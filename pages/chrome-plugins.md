@@ -15,7 +15,7 @@ bootstrap: true
             <div class="row">
                 <div class="col-4">
                     <a href="{{ item.url | relative_url }}">
-                        <img src="{{ item.icon | relative_url }}" alt="Icon" class="img-fluid" />
+                        <img src="{{ item.product-icon | relative_url }}" alt="Icon" class="img-fluid" />
                     </a>
                 </div>
                 <div class="col-8">
