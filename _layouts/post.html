@@ -31,9 +31,11 @@ layout: default
 
 <!-- Disqus -->
 {% if site.disqus_shortname or site.theme_settings.disqus_shortname %}
+{% if page.comments %}
 <div class="comments">
   {% include disqus.html %}
 </div>
+{% endif %}
 {% endif %}
 
 <!-- Post navigation -->

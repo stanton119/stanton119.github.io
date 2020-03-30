@@ -5,6 +5,7 @@ bootstrap: true
 feature-img: "assets/sportstracker/img/NBAScreenshot.png"
 thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
 tags: [projects, sports]
+comments: true
 ---
 
 <meta http-Equiv="Cache-Control" Content="no-cache">

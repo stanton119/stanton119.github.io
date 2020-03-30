@@ -4,8 +4,8 @@
 * https://www.richard-stanton.com/2015/02/the-new-amazon-price-checker/ - convert to post
 * Archive old posts
 * Move posts:
-  * https://www.richard-stanton.com/2015/05/itab-review-on-softpedia-com/
-  * https://www.richard-stanton.com/2015/09/karaoke-mode-techtudo-review/
+  * done - https://www.richard-stanton.com/2015/05/itab-review-on-softpedia-com/
+  * done - https://www.richard-stanton.com/2015/09/karaoke-mode-techtudo-review/
 * Move across disqus thread - done
   * Old IP address 77.111.240.118
 
