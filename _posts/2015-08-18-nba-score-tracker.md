@@ -4,6 +4,7 @@ title: NBA Tracker 2014/15
 bootstrap: true
 feature-img: "assets/sportstracker/img/NBAScreenshot.png"
 thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
+tags: [projects, sports]
 ---
 
 <meta http-Equiv="Cache-Control" Content="no-cache">
