@@ -4,7 +4,7 @@ title: Bass Tab - Incubus - Vitamin
 bootstrap: true
 feature-img: "assets/img/pexels/music.jpg"
 thumbnail: "assets/img/music/tabs/Vitamin-402x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title: Bass Tab - Snarky Puppy - Shofukan
 bootstrap: true
 feature-img: "assets/img/music/tabs/Shofukan-853x300.png"
 thumbnail: "assets/img/music/tabs/Shofukan-853x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

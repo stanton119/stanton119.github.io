@@ -4,7 +4,7 @@ title: Bass Tab - Snarky Puppy - Quarter Master
 bootstrap: true
 feature-img: "assets/img/music/tabs/quarter-master.png"
 thumbnail: "assets/img/music/tabs/quarter-master.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

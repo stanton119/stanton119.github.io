@@ -4,7 +4,7 @@ title: Bass Tab - Pharrell Williams - Gust of Wind
 bootstrap: true
 feature-img: "assets/img/music/tabs/Gust-of-Wind-1140x300.png"
 thumbnail: "assets/img/music/tabs/Gust-of-Wind-1140x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title: Bass Tab - Incubus - Absolution Calling
 bootstrap: true
 feature-img: "assets/img/music/tabs/Incubus-1140x300.png"
 thumbnail: "assets/img/music/tabs/Incubus-1140x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

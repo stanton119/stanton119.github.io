@@ -4,7 +4,7 @@ title: Bass Tab - Earth, Wind and Fire - Getaway
 bootstrap: true
 feature-img: "assets/img/pexels/music.jpg"
 thumbnail: "assets/img/pexels/music.jpg"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

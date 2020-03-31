@@ -4,7 +4,7 @@ title: Bass Tab - Snarky Puppy - Binky
 bootstrap: true
 feature-img: "assets/img/music/tabs/Binky-Snarky-Puppy-1140x300.png"
 thumbnail: "assets/img/music/tabs/Binky-Snarky-Puppy-1140x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 

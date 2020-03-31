@@ -5,7 +5,7 @@ bootstrap: true
 # feature-img: "assets/img/pexels/music.jpg"
 feature-img: "assets/img/music/tabs/Lingus-852x300.png"
 thumbnail: "assets/img/music/tabs/Lingus-852x300.png"
-tags: [music, tab]
+tags: [music, tabs]
 comments: true
 ---
 
