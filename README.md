@@ -1,6 +1,7 @@
 # To do
 
-* Move across all bass tabs
+* Move across all bass tabs - done
+* http://www.richard-stanton.com/sports-trackers/premier-league-tracker/premier-league-tracker-201415/ - done
 * https://www.richard-stanton.com/2015/02/the-new-amazon-price-checker/ - convert to post
 * Archive old posts
 * Move posts:

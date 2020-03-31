@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NBA Tracker 2014/15
+title: Premier League Tracker 2014/15
 bootstrap: true
 feature-img: "assets/sportstracker/img/NBAScreenshot.png"
 thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
@@ -18,33 +18,18 @@ comments: true
 <link href="/assets/sportstracker/css/c3.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-
-Wins against games played.
+Points against games played.
 
 <div id="myChart"></div>
 
 <div class="container-fluid">
     <div class="row" id="teamtable">
-        <div class="col-6 justify-content-center" id="westTable">
-        </div>
-        <div class="col-6 justify-content-center" id="eastTable">
-        </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-2">
-            <p style="text-align: center;">
-                <button id="western" type="button" class="btn btn-outline-primary">West</button>
-            </p>
-        </div>
         <div class="col-4">
             <p style="text-align: center;">
                 <button id="showall" type="button" class="btn btn-outline-primary">Show all</button>
                 <button id="hideall" type="button" class="btn btn-outline-primary">Hide all</button>
-            </p>
-        </div>
-        <div class="col-2">
-            <p style="text-align: center;">
-                <button id="eastern" type="button" class="btn btn-outline-primary">East</button>
             </p>
         </div>
     </div>
@@ -57,8 +42,8 @@ Wins against games played.
     </div>
     <div class="card-body">
         <p>Images from: <a href="http://teamcolors.arc90.com" target="_blank">http://teamcolors.arc90.com</a></p>
-        <p>Data from: <a href="http://www.basketball-reference.com"
-                target="_blank">http://www.basketball-reference.com</a></p>
+        <p>Data from: <a href="https://www.football-data.org"
+                target="_blank">https://www.football-data.org</a></p>
     </div>
 </div>
 
@@ -66,43 +51,32 @@ Wins against games played.
     // team filtering
     var filter = [];
     var teams = [];
-    var eastTeams = [];
-    var isEastTeam = [];
-    var westTeams = [];
 
     // load json objects
     var gameData, colourData, conferenceData;
     $.when(
-        $.getJSON("/assets/sportstracker/NBA/results2015.json", function (data) {
+        $.getJSON("/assets/sportstracker/EPL/resultsEPL2014.json", function (data) {
             gameData = data;
         }),
         $.getJSON("/assets/sportstracker/team-data.json", function (data) {
             colourData = data;
-        }),
-        $.getJSON("/assets/sportstracker/NBA/conference.json", function (data) {
-            conferenceData = data;
         })
-    ).then(function () {
-        // when both available
-        if (conferenceData) {
-            splitConferences(conferenceData);
-        }
-        if (colourData) {
-            // create teams table
-            constructTeamTable(colourData["NBA"]);
-            // split conferences
-            // splitTeams();
-        }
-        else {
-            // Request for web data didn't work, handle it
-        }
-        if (gameData) {
-            // display data in chart
-            constructData(gameData);
-        }
-        else {
-            // Request for graphic data didn't work, handle it
-        }
+    ).then(function() {
+		// when both available
+	    if (colourData) {
+			// create teams table
+			constructTeamTable(colourData["EPL"]);
+	    }
+	    else {
+	        // Request for web data didn't work, handle it
+	    }
+	    if (gameData) {
+			// display data in chart
+			constructData(gameData);
+	    }
+	    else {
+	        // Request for graphic data didn't work, handle it
+	    }
     });
 
     // convert name to ID/filename
@@ -134,41 +108,6 @@ Wins against games played.
         }
     }
 
-    // conference buttons
-    $('#eastern').click(function () {
-        // hide all
-        toggleAll(0);
-        // show just east
-        chart.show(eastTeams);
-        for (i = 0; i < eastTeams.length; i++) {
-            $('#Div' + convertNameToID(eastTeams[i])).find("img").attr('class', 'img-thumbnail iconOn');
-            filter[eastTeams[i]] = 1;
-        }
-    });
-    $('#western').click(function () {
-        toggleAll(0);
-        chart.show(westTeams);
-        for (i = 0; i < westTeams.length; i++) {
-            $('#Div' + convertNameToID(westTeams[i])).find("img").attr('class', 'img-thumbnail iconOn');
-            filter[westTeams[i]] = 1;
-        }
-    });
-
-    function splitConferences(data) {
-        // populate east/west conference
-        $.each(data, function (key, val) {
-            if (val) {
-                isEastTeam[key] = 1;
-                // isEastTeam.push(1);
-                eastTeams.push(key);
-            } else {
-                isEastTeam[key] = 0;
-                westTeams.push(key);
-            }
-        });
-    }
-
-
     // chart colours
     var teamColours = [];
     // create team table
@@ -192,10 +131,28 @@ Wins against games played.
             teams.push(key);
 
             // generate table
-            addToTable(isEastTeam[key], convertNameToID(key));
+			if (col==0) {
+				// alternate row backgrounds
+				if (row%2==0) {
+					content += '<div class="row rowEven justify-content-center">';
+				} else {
+					content += '<div class="row rowOdd justify-content-center">';
+				}
+			}
+
+            content += '<div class="col-sm-1" id="Div' + convertNameToID(key) + '"><img src="/assets/sportstracker/img/epl/' + convertNameToID(key) + '.svg" class="img-thumbnail iconOn">'
+            // content += key
+            content += '</div>';
+
+			// next row?
+			col++;
+			if (col>rowsize-1) {
+				content += '</div>';
+				col=0;
+				row++;
+			}
         });
-        $("#eastTable").append(eastTable);
-        $("#westTable").append(westTable);
+        $("#teamtable").append(content);
 
         // add callback for each diff
         $.each(data, function (key, val) {
@@ -222,68 +179,6 @@ Wins against games played.
         });
     }
 
-    var eastRow = 0;
-    var eastCol = 0;
-    var eastTable = "";
-    var westRow = 0;
-    var westCol = 0;
-    var westTable = "";
-    var rowsize = 5;
-
-    function addToTable(isEast, teamID) {
-        if (isEast) {
-            // generate table
-            if (eastCol == 0) {
-                // alternate row backgrounds
-                if (eastRow % 2 == 0) {
-                    eastTable += '<div class="row rowEven justify-content-center">';
-                } else {
-                    eastTable += '<div class="row rowOdd justify-content-center">';
-                }
-                // off set first column
-                eastTable += '<div class="col-2"';
-            } else {
-                // output all table elements
-                eastTable += '<div class="col-2"';
-            }
-
-            eastTable += ' id="Div' + teamID + '"><img src="/assets/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
-
-            // next row?
-            eastCol++;
-            if (eastCol > rowsize - 1) {
-                eastTable += '</div>';
-                eastCol = 0;
-                eastRow++;
-            }
-        } else {
-            // generate table
-            if (westCol == 0) {
-                // alternate row backgrounds
-                if (westRow % 2 == 0) {
-                    westTable += '<div class="row rowEven justify-content-center">';
-                } else {
-                    westTable += '<div class="row rowOdd justify-content-center">';
-                }
-                // off set first column
-                westTable += '<div class="col-2"';
-            } else {
-                // output all table elements
-                westTable += '<div class="col-2"';
-            }
-
-            westTable += ' id="Div' + teamID + '"><img src="/assets/sportstracker/img/nba/' + teamID + '.svg" class="img-thumbnail iconOn"></div>';
-            // westTable += ' id="Div' + teamID + '">' + teamID + '</div>';
-
-            // next row?
-            westCol++;
-            if (westCol > rowsize - 1) {
-                westTable += '</div>';
-                westCol = 0;
-                westRow++;
-            }
-        }
-    }
 
     // chart object
     var chart;
@@ -335,7 +230,7 @@ Wins against games played.
                     min: 0,
                     padding: { bottom: 3 },
                     label: {
-                        text: 'Wins',
+                        text: 'Points',
                         position: 'outer-middle'
                     }
                 }
@@ -343,7 +238,7 @@ Wins against games played.
             grid: {
                 x: {
                     // number of games in season
-                    lines: [{ value: 82 }],
+                    lines: [{ value: 38 }],
                     show: true
                 },
                 y: {
