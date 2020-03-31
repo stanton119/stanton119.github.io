@@ -4,7 +4,7 @@ title: Karaoke Mode - TechTudo review
 bootstrap: true
 feature-img: "assets/img/pexels/karaoke2.jpeg"
 # thumbnail: "assets/sportstracker/img/NBAScreenshot.png"
-tags: [music]
+tags: [projects-updates, music]
 comments: false
 ---
 

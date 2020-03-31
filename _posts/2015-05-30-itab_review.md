@@ -3,7 +3,7 @@ layout: post
 title: iTab Review on Softpedia.com
 bootstrap: true
 feature-img: "assets/img/pexels/music.jpg"
-tags: [music]
+tags: [projects-updates, music]
 comments: false
 ---
 
