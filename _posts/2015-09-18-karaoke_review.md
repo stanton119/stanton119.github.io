@@ -26,9 +26,9 @@ comments: false
 </div>
 </blockquote>
 
-The full review can be found here: [http://www.techtudo.com.br/tudo-sobre/karaoke-mode-for-youtube.html]().
+The full review can be found here: <http://www.techtudo.com.br/tudo-sobre/karaoke-mode-for-youtube.html>.
 
 They were also kind enough to write a tutorial in Portuguese on how to install and run <strong><a href="{% link _chrome-plugins/youtube-karaoke.md %}">Karaoke Mode</a></strong>, which can be found here:
-[http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2015/09/como-colocar-o-youtube-em-modo-karaoke-e-cantar-junto-com-musica.html]()
+<http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2015/09/como-colocar-o-youtube-em-modo-karaoke-e-cantar-junto-com-musica.html>
 
 I've noticed a lot of new users downloading the plugin, so if you have any troubles please let me know!

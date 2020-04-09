@@ -1,9 +1,16 @@
 # To do
 
+* Create header to filter for certain tags - bass tabs, projects, data stuff
+  * Cant do ATM
+* Create more articles for github projects
+  * Travel alerts
+  * NBA score tracker
+  * TFL cycles
+* https://www.richard-stanton.com/2015/02/the-new-amazon-price-checker/ - convert to post
+* Redirect domain to github
+* Archive old posts?
 * Move across all bass tabs - done
 * http://www.richard-stanton.com/sports-trackers/premier-league-tracker/premier-league-tracker-201415/ - done
-* https://www.richard-stanton.com/2015/02/the-new-amazon-price-checker/ - convert to post
-* Archive old posts
 * Move posts:
   * done - https://www.richard-stanton.com/2015/05/itab-review-on-softpedia-com/
   * done - https://www.richard-stanton.com/2015/09/karaoke-mode-techtudo-review/
