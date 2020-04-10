@@ -17,7 +17,7 @@ comments: false
 <div class="container-fluid">
 	<div class="row justify-content-center align-items-center">
 		<div class="col-5">
-			<img class="img-fluid" src="http://www.richard-stanton.com/wp-content/uploads/2015/09/TechTudo-Review.png" alt="TechTudo Review">
+			<img class="img-fluid" src="/assets/img/chrome-plugins/youtube-karaoke/TechTudo-Review.png" alt="TechTudo Review">
 		</div>
 		<div class="col-7">
 			O Karaoke Mode for YouTube é uma extensão para Google Chrome que amplia as possibilidades de diversão com vídeos do YouTube. A aplicação foi desenvolvida para suprir a necessidade de quem é apaixonado por karaokê. Isso mesmo. Imagine pode cantar junto com as músicas de seus artistas favoritos.
