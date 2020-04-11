@@ -26,7 +26,7 @@ Points against games played.
     <div class="row" id="teamtable">
     </div>
     <div class="row justify-content-center">
-        <div class="col-4">
+        <div class="col-sm-4">
             <p style="text-align: center;">
                 <button id="showall" type="button" class="btn btn-outline-primary">Show all</button>
                 <button id="hideall" type="button" class="btn btn-outline-primary">Hide all</button>

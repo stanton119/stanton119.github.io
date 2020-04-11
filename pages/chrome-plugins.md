@@ -11,7 +11,7 @@ bootstrap: true
 <div class="container-fluid">
     <div class="row justify-content-center">
         {% for item in site.chrome-plugins %}
-        <div class="col-6">
+        <div class="col-sm-6">
             <div class="row">
                 <div class="col-4">
                     <a href="{{ item.url | relative_url }}">
