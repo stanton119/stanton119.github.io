@@ -17,6 +17,8 @@
 * Move across disqus thread - done
   * Old IP address 77.111.240.118
 
+Build:  
+``bundle exec jekyll serve``
 
 
 # Type on Strap 
