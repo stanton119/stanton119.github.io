@@ -12,7 +12,8 @@ comments: true
 Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/TFLCycles).
 
 ## Dataset
-The data was provided from TFL and was retrieved from Kaggle: https://www.kaggle.com/hmavrodiev/london-bike-sharing-dataset
+The data was provided from TFL and was retrieved from Kaggle:  
+https://www.kaggle.com/hmavrodiev/london-bike-sharing-dataset  
 The dataset counts the number of journeys made per hour in each day of 2015-2017.
 There are 17414 rows.
 
