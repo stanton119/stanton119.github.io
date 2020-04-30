@@ -8,13 +8,12 @@ color: rgb(165,42,42)
 comments: true
 ---
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro).
+Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
 
 # Fitting a Distribution with Pyro
 
-In this simple example we will fit a Gaussian distribution to random data from a gaussian with some known mean and standard deviation.
+ In this simple example we will fit a Gaussian distribution to random data from a gaussian with some known mean and standard deviation.
  We want to estimate a distribution that best fits the data using variational inference with Pyro.
- 
 
  References:
    * [https://pyro.ai/examples/intro_part_ii.html](https://pyro.ai/examples/intro_part_ii.html)
@@ -35,7 +34,7 @@ from scipy.stats import norm
 import matplotlib.pyplot as plt
 
 plt.style.use("seaborn-whitegrid")
-
+np.random.seed(0)
 ```
 
 ## Generate observed data
@@ -56,8 +55,8 @@ print(f"Standard deviation: {np.std(x)}")
 
  ```
  Shape: (1000, 1)
- Mean: 1.987280841100236
- Standard deviation: 3.9196571939982863
+ Mean: 1.8189731700392184
+ Standard deviation: 3.9481326346761034
  ```
 
  Now that we have generated the data we need to use it to estimate the original distribution parameters.
@@ -78,7 +77,7 @@ print(f"Standard deviation: {np.std(x)}")
  This is different to MCMC. With MCMC we get a numerical approximation to the exact posterior using a set of samples, Variational Bayes provides a locally-optimal, exact analytical solution to an approximation of the posterior.
  References:
  * [https://www.youtube.com/watch?v=3KGZDC3-_iY](https://www.youtube.com/watch?v=3KGZDC3-_iY)
- * [https://pyro.ai/examples/bayesian_regression.html](https://pyro.ai/examples/bayesian_regression.html)
+ * [http://pyro.ai/examples/bayesian_regression.html](http://pyro.ai/examples/bayesian_regression.html)
  * [https://en.wikipedia.org/wiki/Variational_Bayesian_methods](https://en.wikipedia.org/wiki/Variational_Bayesian_methods)
 
 ## Pyro approach
@@ -95,11 +94,14 @@ print(f"Standard deviation: {np.std(x)}")
  The mean is taken from another Gaussian distribution. The standard deviation comes from a Gamma distribution.
 
  This is represented as:
+
  $$x\sim\mathcal{N}\left(\mu,\sigma^{2}\right)$$
+
  $$\mu\sim\mathcal{N}\left(\mu_{\mu},\mu_{\sigma^{2}}\right)$$
+
  $$\sigma\sim\mathrm{Gamma}\left(\alpha,\beta\right)$$
 
- The parameters for these two distributions ($\mu_{\mu},\mu_{\sigma}, \alpha,\beta$) are the function inputs:
+ The parameters for these two distributions ($$\mu_{\mu},\mu_{\sigma}, \alpha,\beta$$) are the function inputs:
  ```
      params: [mu_prior + std_prior]
          mu_prior - Gaussian - mu, std
@@ -133,9 +135,9 @@ conditioned_data_model = pyro.condition(
  These functions are built with pyro primatives so that they can be used with gradient descent to optimise the KL divergence.
  The function params are in the same form as the above data generating model.
  The `pyro.param` statements recall the named parameters from the pyro param store. If no parameter exists with that name it will use the `param[.]` value passed to it, this happens on the first call only.
- We use the constraint property to ensure the distribution parameters are correctly $>0$.
+ We use the constraint property to ensure the distribution parameters are correctly $$>0$$.
 
- We use the `torch.abs` calls to ensure the distribution parameters are correctly $>0$.
+ We use the `torch.abs` calls to ensure the distribution parameters are correctly $$>0$$.
 
  We make both `mu_dist` and `std_dist` as separate objects in order to optimise the mean and standard deviation of our data separately.
 
@@ -212,6 +214,7 @@ for t in range(num_steps):
 
 ```python
 # Convergence of the loss function
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 plt.plot(losses)
 plt.title("ELBO")
 plt.xlabel("Iteration")
@@ -220,12 +223,13 @@ plt.savefig("images/elbo.png")
 plt.show()
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/elbo.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/elbo.png)
 
  We can also see how the distribution parameters have converged:
 
 
 ```python
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 plt.subplot(2, 2, 1)
 plt.plot(mu_mu)
 plt.ylabel("mu_mu")
@@ -245,15 +249,17 @@ plt.savefig("images/params.png")
 plt.show()
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/params.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/params.png)
 
- The parameters for the mean distribution have converged well. The parameters of the standard deviation distribution have behaved differently.
+ The parameters for the mean distribution have converged well.
+ The parameters of the standard deviation distribution have behaved differently.
 
  First, we can show the PDF of the mean distribution comparing the prior and posteriors:
 
 
 ```python
 # Plot mean distributions
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 mu_prior_dist = norm(loc=mu_prior[0], scale=mu_prior[1])
 x_range = np.linspace(mu_prior_dist.ppf(0.01), mu_prior_dist.ppf(0.99), num=100)
 y_values = mu_prior_dist.pdf(x_range)
@@ -272,7 +278,7 @@ plt.savefig("images/mean_dist.png")
 plt.show()
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/mean_dist.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/mean_dist.png)
 
  The prior is mostly flat, the posterior on the other hand is very sharp.
  It is very confident that the actual mean is around 2, which would be correct.
@@ -283,6 +289,7 @@ plt.show()
 
 ```python
 # Plot std distributions
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 x_range = np.linspace(0, 10, num=100)
 
 std_prior_dist = dist.Gamma(std_prior[0], std_prior[1])
@@ -299,14 +306,15 @@ plt.savefig("images/std_dist.png")
 plt.show()
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/std_dist.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/std_dist.png)
 
- The prior is similarly mostly flat. The posterior has a peak around 3.8 which is close to the true value of 4, or the sample standard deviation of 3.9.
+ The prior is similarly mostly flat. The posterior has a peak around 4.0 which is a match to the true value of 4 and the sample standard deviation of 3.9.
 
  To look into the non-converging parameters let's look at distribution at different points in its training:
 
 
 ```python
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 x_range = np.linspace(0, 10, num=100)
 
 for idx in [500, 1000, 2000, 3000, 4000, 4999]:
@@ -320,14 +328,20 @@ plt.savefig("images/std_dist_idx.png")
 plt.show()
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/std_dist_idx.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/std_dist_idx.png)
 
- The distribution is converging towards the correct value from about 1000 iterations. The parameters kept changing in the same direction. As the distributions are converging this suggests that the two parameters $\alpha, \beta$ are some what correlated, allowing both to change to improve our loss function. This can cause the optimisation to struggle or take longer. I will not pursue this much further though, as the distribution has converged well.
+ The distribution is converging towards the correct value from about 500 iterations.
+ The parameters kept changing in the same direction.
+ As the distributions are converging this suggests that the two parameters
+ $$\alpha, \beta$$ are some what correlated, allowing both to change to improve our loss function.
+ This can cause the optimisation to struggle or take longer.
+ I will not pursue this much further though, as the distribution has converged well.
 
  The data distribution can be plotted over the original data to see a goodness of fit:
 
 
 ```python
+plt.figure(num=None, figsize=(10, 6), dpi=80)
 plt.hist(x, density=True)
 
 # plot prior
@@ -350,10 +364,13 @@ plt.legend()
 plt.title("Data histogram")
 plt.savefig("images/data_dist.png")
 plt.show()
+
+print(post_mu)
+print(post_std)
 ```
 
- ![](https://github.com/stanton119/data-analysis/tree/master/FitDistWithPyro/images/data_dist.png)
+ ![](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro/images/data_dist.png)
 
  The posterior (green line) fits the data histogram well as we would expect.
- The values of the posterior distribution (1.98, 3.79) are similar to those from the sample estimates (1.99, 3.92).
+ The values of the posterior distribution (1.82, 4.01) are similar to those from the sample estimates (1.82, 3.95).
  However in the posterior case we have our confidence around those values rather than just point estimates.
