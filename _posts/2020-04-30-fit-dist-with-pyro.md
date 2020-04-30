@@ -4,6 +4,7 @@ title: Fitting a Distribution with Pyro
 # feature-img: "assets/img/thumbnails/nba_score_tracker.png"
 # thumbnail: "assets/img/thumbnails/nba_score_tracker.png"
 tags: [projects, data, bayesian]
+color: rgb(165,42,42)
 comments: true
 ---
 
@@ -16,7 +17,7 @@ In this simple example we will fit a Gaussian distribution to random data from a
  
 
  References:
-   * http://pyro.ai/examples/intro_part_ii.html
+   * [https://pyro.ai/examples/intro_part_ii.html](https://pyro.ai/examples/intro_part_ii.html)
 
  Import the required libraries:
 
@@ -76,9 +77,9 @@ print(f"Standard deviation: {np.std(x)}")
 
  This is different to MCMC. With MCMC we get a numerical approximation to the exact posterior using a set of samples, Variational Bayes provides a locally-optimal, exact analytical solution to an approximation of the posterior.
  References:
- * https://www.youtube.com/watch?v=3KGZDC3-_iY
- * http://pyro.ai/examples/bayesian_regression.html
- * https://en.wikipedia.org/wiki/Variational_Bayesian_methods
+ * [https://www.youtube.com/watch?v=3KGZDC3-_iY](https://www.youtube.com/watch?v=3KGZDC3-_iY)
+ * [https://pyro.ai/examples/bayesian_regression.html](https://pyro.ai/examples/bayesian_regression.html)
+ * [https://en.wikipedia.org/wiki/Variational_Bayesian_methods](https://en.wikipedia.org/wiki/Variational_Bayesian_methods)
 
 ## Pyro approach
  `pyro` is a probabilistic library that sits on top of `pytorch` that enables variational inference.
