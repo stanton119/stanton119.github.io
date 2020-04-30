@@ -4,7 +4,7 @@
   * Cant do ATM
 * Create more articles for github projects
   * Travel alerts
-  * NBA score tracker
+  * NBA score tracker - done
   * TFL cycles - done
 * https://www.richard-stanton.com/2015/02/the-new-amazon-price-checker/ - convert to post
 * Redirect domain to github
