@@ -3,6 +3,7 @@ layout: post
 title: NBA Match Analysis
 # feature-img: "assets/img/thumbnails/nba_score_tracker.png"
 thumbnail: "assets/img/thumbnails/nba_score_tracker.png"
+color: rgb(85,37,130)
 tags: [projects, data, sports]
 comments: true
 ---
