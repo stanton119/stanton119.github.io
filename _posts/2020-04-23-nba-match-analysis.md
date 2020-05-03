@@ -8,9 +8,9 @@ tags: [projects, data, sports]
 comments: true
 ---
 
-Part of a project on [github](https://github.com/stanton119/nba-scores).
-
 The aim of this project is to plot interactive scores of NBA games over the course of the match:
+
+Part of a project on [github](https://github.com/stanton119/nba-scores).
 
 <div class="container-fluid">
     <div class="row justify-content-center">

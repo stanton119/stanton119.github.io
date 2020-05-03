@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TFL Cycle Data Exploration
+title: Transport for London Cycle Data Exploration
 feature-img: "assets/img/thumbnails/prophet_pred.png"
 thumbnail: "assets/img/thumbnails/prophet_pred.png"
 tags: [projects, data]
 comments: true
 ---
 
-# Transport for London Cycle Data Exploration
+Here we will look through TFL cycle data and explore how the number of journeys vary.
 
 Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/TFLCycles).
 

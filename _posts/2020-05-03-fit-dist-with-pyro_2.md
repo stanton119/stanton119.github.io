@@ -8,11 +8,9 @@ color: green
 comments: true
 ---
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
 
 This follows on from the previous post on fitting a gaussian distribution with pyro:
 [Fitting a Distribution with Pyro]({% post_url 2020-04-30-fit-dist-with-pyro %})
-
 
  Here we assume we are flipping a slightly biased coin.
  We think the probability of a heads is close to 0.5, but we are not sure.
@@ -20,6 +18,8 @@ This follows on from the previous post on fitting a gaussian distribution with p
 
  References:
    * [https://pyro.ai/examples/svi_part_i.html](https://pyro.ai/examples/svi_part_i.html)
+
+Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
 
  Import the required libraries:
 

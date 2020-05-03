@@ -8,14 +8,14 @@ color: rgb(165,42,42)
 comments: true
 ---
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
-
 
  In this simple example we will fit a Gaussian distribution to random data from a gaussian with some known mean and standard deviation.
  We want to estimate a distribution that best fits the data using variational inference with Pyro.
 
  References:
    * [https://pyro.ai/examples/intro_part_ii.html](https://pyro.ai/examples/intro_part_ii.html)
+
+Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
 
  Import the required libraries:
 
