@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Transport for London Cycle Data Exploration
-feature-img: "assets/img/thumbnails/prophet_pred.png"
+# feature-img: "assets/img/thumbnails/prophet_pred.png"
 thumbnail: "assets/img/thumbnails/prophet_pred.png"
 tags: [projects, data]
+color: rgb(17, 59, 146)
 comments: true
 ---
 
@@ -26,13 +27,13 @@ cycle_data = dp.load_tfl_csv()
 
 ```
 
-|    | timestamp           |   cnt |   t1 |   t2 |   hum |   wind_speed |   weather_code |   is_holiday |   is_weekend |   season |
-|---:|:--------------------|------:|-----:|-----:|------:|-------------:|---------------:|-------------:|-------------:|---------:|
-|  0 | 2015-01-04 00:00:00 |   182 |  3   |  2   |  93   |          6   |              3 |            0 |            1 |        3 |
-|  1 | 2015-01-04 01:00:00 |   138 |  3   |  2.5 |  93   |          5   |              1 |            0 |            1 |        3 |
-|  2 | 2015-01-04 02:00:00 |   134 |  2.5 |  2.5 |  96.5 |          0   |              1 |            0 |            1 |        3 |
-|  3 | 2015-01-04 03:00:00 |    72 |  2   |  2   | 100   |          0   |              1 |            0 |            1 |        3 |
-|  4 | 2015-01-04 04:00:00 |    47 |  2   |  0   |  93   |          6.5 |              1 |            0 |            1 |        3 |
+|      | timestamp           |  cnt |   t1 |   t2 |  hum | wind_speed | weather_code | is_holiday | is_weekend | season |
+| ---: | :------------------ | ---: | ---: | ---: | ---: | ---------: | -----------: | ---------: | ---------: | -----: |
+|    0 | 2015-01-04 00:00:00 |  182 |    3 |    2 |   93 |          6 |            3 |          0 |          1 |      3 |
+|    1 | 2015-01-04 01:00:00 |  138 |    3 |  2.5 |   93 |          5 |            1 |          0 |          1 |      3 |
+|    2 | 2015-01-04 02:00:00 |  134 |  2.5 |  2.5 | 96.5 |          0 |            1 |          0 |          1 |      3 |
+|    3 | 2015-01-04 03:00:00 |   72 |    2 |    2 |  100 |          0 |            1 |          0 |          1 |      3 |
+|    4 | 2015-01-04 04:00:00 |   47 |    2 |    0 |   93 |        6.5 |            1 |          0 |          1 |      3 |
 
 ## Preprocessing
 The data is preprocessed to change column names and convert some columns. We also aggregate the data into days and save it for later use.
