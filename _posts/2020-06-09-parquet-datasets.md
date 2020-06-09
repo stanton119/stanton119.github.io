@@ -4,15 +4,15 @@ title: "Exploring parquet datasets"
 # feature-img: "assets/img/thumbnails/nba_score_tracker.png"
 # thumbnail: "assets/img/thumbnails/nba_score_tracker.png"
 tags: [data]
-color: green
+color: pink
 comments: true
 ---
 
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/ParquetDatasets).
-
 
 Parquet files are a columinar data format we can use to store dataframes. They can be stored in partitions, which can allow us to load only a subset of the data. This is useful is we are filtering the data, as we can do that without loading it all into memory.
+
+Also on [github](https://github.com/stanton119/data-analysis/tree/master/ParquetDatasets).
 
 Import stuff:
 
