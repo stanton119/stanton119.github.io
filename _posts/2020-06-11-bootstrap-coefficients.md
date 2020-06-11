@@ -387,7 +387,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/BootstrappedRegessionCoefficients/bootstrap_regression_files/bootstrap_regression_files/bootstrap_regression_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/BootstrappedRegessionCoefficients/bootstrap_regression_files/bootstrap_regression_11_0.svg)
 
 
 The above figures show that both the means and standard deviations are close. This suggests the coefficient distribution from the theory are likely correct. The numbers should converge with more bootstrap samples.
