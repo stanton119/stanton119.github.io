@@ -2,7 +2,7 @@
 layout: post
 title: "Building a Convolution Neural Network For Fashion Data"
 tags: [data]
-color: black
+color: blue
 comments: true
 ---
 
