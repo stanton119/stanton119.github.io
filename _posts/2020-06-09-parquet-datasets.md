@@ -179,7 +179,6 @@ heart_data["partition"] = (heart_data["age"] / 10).round().astype(int)
 ```
 
 
-![svg](parquet_datasets_files/parquet_datasets_5_0.svg)
 ![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/ParquetDatasets/parquet_datasets_files/parquet_datasets_5_0.svg)
 
 
