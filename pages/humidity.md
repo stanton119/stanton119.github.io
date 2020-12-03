@@ -18,7 +18,7 @@ disqus_identifier: https://www.richard-stanton.com/humidity-calculator/
             pastSelectionStart = this.selectionStart;
             pastSelectionEnd = this.selectionEnd;
         }).on("input propertychange", function () {
-            var regex = /^[-0-9]+\.?[0-9]*$/;
+            var regex = /^-?[0-9]*\.?[0-9]*$/;
 
             if (this.value.length > 0 && !regex.test(this.value)) {
                 this.value = pastValue;
