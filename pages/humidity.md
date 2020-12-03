@@ -10,45 +10,44 @@ disqus_identifier: https://www.richard-stanton.com/humidity-calculator/
 ---
 
 <script type="text/javascript">
-$( document ).ready(function() {
-    var pastValue, pastSelectionStart, pastSelectionEnd;
+    $(document).ready(function () {
+        var pastValue, pastSelectionStart, pastSelectionEnd;
 
-    $("input").on("keydown", function() {
-        pastValue          = this.value;
-        pastSelectionStart = this.selectionStart;
-        pastSelectionEnd   = this.selectionEnd;
-    }).on("input propertychange", function() {
-        var regex = /^[0-9]+\.?[0-9]*$/;
+        $("input").on("keydown", function () {
+            pastValue = this.value;
+            pastSelectionStart = this.selectionStart;
+            pastSelectionEnd = this.selectionEnd;
+        }).on("input propertychange", function () {
+            var regex = /^[-0-9]+\.?[0-9]*$/;
 
-        if (this.value.length > 0 && !regex.test(this.value)) {
-            this.value          = pastValue;
-            this.selectionStart = pastSelectionStart;
-            this.selectionEnd   = pastSelectionEnd;
-        }
-        
-        
-        computeHumidity();
+            if (this.value.length > 0 && !regex.test(this.value)) {
+                this.value = pastValue;
+                this.selectionStart = pastSelectionStart;
+                this.selectionEnd = pastSelectionEnd;
+            }
+
+
+            computeHumidity();
+        });
     });
-});
 
-function computeHumidity() {
-    // get all variables
-    var outsideTemp, insideTemp, outsideHumid;
-    
-    outsideTemp = parseFloat($('#outsideTemp').val());
-    outsideHumid = parseFloat($('#outsideHumid').val());
-    insideTemp = parseFloat($('#insideTemp').val());
-    
-    if(!isNaN(outsideTemp) && !isNaN(outsideHumid) && !isNaN(insideTemp)) {
-        var insideHumid, satVarPOut, satVarPIn;
-        satVarPIn = 6.122*Math.exp(17.62*insideTemp/(243.12+insideTemp));
-        satVarPOut = 6.122*Math.exp(17.62*outsideTemp/(243.12+outsideTemp));
-        insideHumid = (insideTemp+273)*outsideHumid*satVarPOut / ((outsideTemp+273)*satVarPIn);
+    function computeHumidity() {
+        // get all variables
+        var outsideTemp, insideTemp, outsideHumid;
 
-        
-        $('#insideHumid').val(Math.round(insideHumid));			
+        outsideTemp = parseFloat($('#outsideTemp').val());
+        outsideHumid = parseFloat($('#outsideHumid').val());
+        insideTemp = parseFloat($('#insideTemp').val());
+
+        if (!isNaN(outsideTemp) && !isNaN(outsideHumid) && !isNaN(insideTemp)) {
+            var insideHumid, satVarPOut, satVarPIn;
+            satVarPIn = 6.122 * Math.exp(17.62 * insideTemp / (243.12 + insideTemp));
+            satVarPOut = 6.122 * Math.exp(17.62 * outsideTemp / (243.12 + outsideTemp));
+            insideHumid = (insideTemp + 273) * outsideHumid * satVarPOut / ((outsideTemp + 273) * satVarPIn);
+
+            $('#insideHumid').val(Math.round(insideHumid));
+        }
     }
-}
 </script>
 
 
@@ -66,11 +65,11 @@ Try to keep inside humidity in the range of 40-60%.
 The following calculator will work out the humidity of the outside air when it has been warmed up to the temperature of your home:
 
 
-<div class="container-fluid">
+<div class="container">
     <form id="formdata">
         <!-- outside -->
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Outside Temperature (&deg;C)</label>
                     <div class="input-group">
@@ -81,7 +80,7 @@ The following calculator will work out the humidity of the outside air when it h
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="form-group form-group-lg">
                     <label class="sr-only" for="exampleInputAmount">Outside Humidity (%)</label>
                     <div class="input-group">
