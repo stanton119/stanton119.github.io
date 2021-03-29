@@ -20,6 +20,10 @@
 Build:  
 ``bundle exec jekyll serve``
 
+Convert notebook to markdown:  
+VScode - export notebook  
+``jupyter nbconvert notebook.ipynb --to markdown``
+
 
 # Type on Strap 
 
