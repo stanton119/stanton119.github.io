@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "NBA - LeBron James plays a lot"
+title: "NBA - How durable is LeBron James?"
 tags: [data]
 color: Yellow
 comments: true
 ---
-
-# How durable is LeBron James?
 
 Is this post we look at season data to compare the playing time of LeBron to other players.
 
@@ -215,18 +213,12 @@ Interesting Jordan is an exception due to his two retirement periods.
 df_season_no_plot.loc[["James", "Bryant", "Jordan", "Jabar"], :].cumsum(
     axis=1
 ).transpose().plot(grid=True, ylabel="Minutes played", figsize=(10, 6))
+plt.show()
 ```
 
 
-
-
-    <AxesSubplot:xlabel='SeasonNo', ylabel='Minutes played'>
-
-
-
-
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_7_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_7_0.svg)
     
 
 
@@ -239,18 +231,12 @@ df_season_no_plot.loc[
 ].cumsum(axis=1).transpose().plot(
     grid=True, ylabel="Minutes played", figsize=(10, 6)
 )
+plt.show()
 ```
 
 
-
-
-    <AxesSubplot:xlabel='SeasonNo', ylabel='Minutes played'>
-
-
-
-
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_9_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_9_0.svg)
     
 
 
@@ -278,18 +264,12 @@ df_season_no_plot.loc[
 ].cumsum(axis=1).transpose().plot(
     grid=True, ylabel="Minutes played", figsize=(10, 6)
 )
+plt.show()
 ```
 
 
-
-
-    <AxesSubplot:xlabel='SeasonNo', ylabel='Minutes played'>
-
-
-
-
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_11_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_11_0.svg)
     
 
 
@@ -300,18 +280,12 @@ Just for fun here's load of players on one unreadable plot:
 df_season_no_plot.cumsum(axis=1).transpose().plot(
     grid=True, ylabel="Minutes played", figsize=(10, 6)
 )
+plt.show()
 ```
 
 
-
-
-    <AxesSubplot:xlabel='SeasonNo', ylabel='Minutes played'>
-
-
-
-
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_13_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_13_0.svg)
     
 
 
@@ -331,4 +305,3 @@ plt.show()
     
 ![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_15_0.svg)
     
-
