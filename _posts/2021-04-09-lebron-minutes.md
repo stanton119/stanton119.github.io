@@ -218,7 +218,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_7_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_7_0.svg)
     
 
 
@@ -236,7 +236,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_9_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_9_0.svg)
     
 
 
@@ -269,7 +269,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_11_0.svg)
     
 
 
@@ -285,7 +285,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_13_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_13_0.svg)
     
 
 
@@ -303,5 +303,5 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played_files/minutes_played_15_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_15_0.svg)
     
