@@ -2,7 +2,7 @@
 layout: post
 title: "NBA - How durable is LeBron James?"
 tags: [data]
-color: Yellow
+color: orange
 comments: true
 ---
 
