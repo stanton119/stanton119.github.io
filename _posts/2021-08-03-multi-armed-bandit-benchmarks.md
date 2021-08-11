@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Parallel general functions using Dask"
+title: "Exploring multi-armed bandit baseline strategies"
 tags: [data]
 color: red
 comments: true
 ---
 
-# Exploring multi-armed bandit baseline strategies
 Our problem:
 For the next 100 days, we will have 1 hour to play a video games.
 We have 20 games, but have no idea which one we will enjoy the most.
