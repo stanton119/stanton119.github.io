@@ -30,7 +30,7 @@ authors:                                                # In _data/authors.yml
 language:                                               # In _data/language.yml
 
 # PAGINATION
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num"
 
 # PORTFOLIO
