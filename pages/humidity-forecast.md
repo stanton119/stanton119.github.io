@@ -11,11 +11,9 @@ comments: true
 <div class="container-xl">
     <form id="postCodeForm">
         <div class="row justify-content-center">
-            <div class="col">
                 <label for="postcodeInput" class="col-form-label col-form-label-lg">UK post code</label>
                 <input type="text" class="form-control-lg" id="postcodeInput" placeholder="SW1A 2JR">
                 <button type="submit" class="btn btn-primary btn-lg" onClick="submitPostcode()">Submit</button>
-            </div>
         </div>
     </form>
     <div class="row">
