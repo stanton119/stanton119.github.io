@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Humidity forecast"
-tags: [data]
-color: red
+tags: []
+color: blue
 comments: true
 ---
 
 I've built a new page for forecasting indoor humidity:
 
-[https://www.richard-stanton.com/humidity-forecast/](https://www.richard-stanton.com/humidity-forecast/)
+[https://www.richard-stanton.com/humidity-forecast](https://www.richard-stanton.com/humidity-forecast)
 
 This is similar in concept to the [Humidity Calculator](https://www.richard-stanton.com/humidity-calculator/).
 
