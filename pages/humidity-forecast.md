@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Humidity Forecast
+permalink: /humidity-forecast
 feature-img: "assets/img/pexels/rain.jpeg"
 # tags: [About, Archive]
 bootstrap: true
