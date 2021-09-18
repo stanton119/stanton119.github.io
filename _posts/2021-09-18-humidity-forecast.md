@@ -12,7 +12,7 @@ I've built a new page for forecasting indoor humidity:
 
 This is similar in concept to the [Humidity Calculator](https://www.richard-stanton.com/humidity-calculator/).
 
-![png](../assets/img/posts/humidity_forecast.png)
+![png](/assets/img/posts/humidity_forecast.png)
 
 We use a UK postcode to make a request to the BBC's weather forecast.
 We then use the same maths as the previous humidity calculator to get the inside humidity.
