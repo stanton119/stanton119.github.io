@@ -25,8 +25,16 @@ Via docker:
 docker run --rm -it \
   --volume="$PWD:/srv/jekyll" \
   --volume="$PWD/_vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 jekyll/jekyll:3.8 \
+  -p 4000:4000 jekyll/minimal:3.8 \
   jekyll serve
+```
+```
+--rm = remove container on exit
+-i = interactive
+--volume = map local:container folder
+-p = port
+jekyll/minimal:3.8 = image name
+jekyll serve = command to run
 ```
 
 Convert notebook to markdown:  
