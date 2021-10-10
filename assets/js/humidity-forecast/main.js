@@ -138,6 +138,9 @@ function createPlot(traces) {
       range: [xrangemin, xrangemax],
       rangeslider: {}
     },
+    legend: {
+      x: 0
+    }
   };
   updatePlotData(traces)
   Plotly.newPlot(plotDiv, plotData, layout);
