@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Carbon Forecast
-permalink: /humidity-forecast
-feature-img: "assets/img/pexels/rain.jpeg"
+permalink: /carbon-forecast
+feature-img: "assets/img/pexels/travel.jpeg"
 # tags: [About, Archive]
 bootstrap: true
 comments: true
