@@ -44,10 +44,8 @@ ax.hist(rand_samples, bins=50)
 plt.show()
 
 ```
-
-
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/fitting_multimodal_distributions/multimodal_beta_files/multimodal_beta_2_0.png)
+![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_2_0.png)
     
 
 
@@ -150,7 +148,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/fitting_multimodal_distributions/multimodal_beta_files/multimodal_beta_8_0.png)
+![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_8_0.png)
     
 
 
@@ -195,7 +193,7 @@ trainer.fit(model, dataloader_train)
     IPU available: False, using: 0 IPUs
     /Users/Rich/Developer/miniconda3/envs/pytorch_env/lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py:122: UserWarning: You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.
       rank_zero_warn("You defined a `validation_step` but have no `val_dataloader`. Skipping val loop.")
-    Missing logger folder: /Users/Rich/Developer/Github/VariousDataAnalysis/PyTorchStuff/fitting_multimodal_distributions/lightning_logs
+    Missing logger folder: /Users/Rich/Developer/Github/VariousDataAnalysis/FittingMultimodalDistributions/multimodal_beta_pytorch/lightning_logs
     
       | Name | Type | Params
     ------------------------------
@@ -236,7 +234,7 @@ plt.plot(moving_average(np.array(model.train_log_error)))
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/fitting_multimodal_distributions/multimodal_beta_files/multimodal_beta_14_1.png)
+![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_14_1.png)
     
 
 
@@ -259,7 +257,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/fitting_multimodal_distributions/multimodal_beta_files/multimodal_beta_16_0.png)
+![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_16_0.png)
     
 
 
