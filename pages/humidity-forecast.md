@@ -16,6 +16,10 @@ comments: true
                 <input type="text" class="form-control-lg" id="postcodeInput" placeholder="SW1A 2JR">
                 <button type="submit" class="btn btn-primary btn-lg" onClick="submitPostcode()">Submit</button>
         </div>
+        <div class="row justify-content-center">
+                <label for="indoorTempInput" class="col-form-label col-form-label-lg">Indoor Temperature (ºC)</label>
+                <input type="text" class="form-control-lg" id="indoorTempInput" placeholder="21">
+        </div>
     </form>
     <div class="row">
         <div class="col">

@@ -82,11 +82,13 @@ function saturatePressure(temp) {
 }
 
 function getInsideHumidity(outside_temp, outside_humidity) {
+  var indoorTemperature = parseFloat(document.getElementById("indoorTempInput").value);
+  
   return (
-    (inside_temp + 273)
+    (indoorTemperature + 273)
     * outside_humidity
     * saturatePressure(outside_temp)
-    / ((outside_temp + 273) * saturatePressure(inside_temp))
+    / ((outside_temp + 273) * saturatePressure(indoorTemperature))
   )
 }
 
@@ -186,6 +188,12 @@ function defaultSetup() {
     postCode = formatPostcode(postCode)
     document.getElementById("postcodeInput").value = postCode
   }
+
+  var indoorTemperature = findGetParameter('indoortemp')
+  if (indoorTemperature != null) {
+    document.getElementById("indoorTempInput").value = indoorTemperature
+  }
+
   submitPostcode(createPlot)
 }
 
