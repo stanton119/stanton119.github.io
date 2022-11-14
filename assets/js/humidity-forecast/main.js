@@ -83,7 +83,10 @@ function saturatePressure(temp) {
 
 function getInsideHumidity(outside_temp, outside_humidity) {
   var indoorTemperature = parseFloat(document.getElementById("indoorTempInput").value);
-  
+  if (indoorTemperature == "") {
+    indoorTemperature = document.getElementById("indoorTempInput").getAttribute("placeholder");
+  }
+
   return (
     (indoorTemperature + 273)
     * outside_humidity
