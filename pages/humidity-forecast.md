@@ -14,7 +14,7 @@ comments: true
         <div class="row justify-content-center">
                 <label for="postcodeInput" class="col-form-label col-form-label-lg">UK post code</label>
                 <input type="text" class="form-control-lg" id="postcodeInput" placeholder="SW1A 2JR">
-                <button type="submit" class="btn btn-primary btn-lg" onClick="submitPostcode()">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
         </div>
         <div class="row justify-content-center">
                 <label for="indoorTempInput" class="col-form-label col-form-label-lg">Indoor Temperature (ºC)</label>
