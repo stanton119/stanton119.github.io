@@ -9,12 +9,12 @@ bootstrap: true
 comments: true
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"
     charset="utf-8"></script>
 <script src="/assets/js/bpm-tracker/bpm.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="/assets/js/bpm-tracker/c3.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://d3js.org/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="//d3js.org/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
 <!-- Load c3.css -->
 <link href="/assets/css/bpm-tracker/c3.css" rel="stylesheet" type="text/css">
 

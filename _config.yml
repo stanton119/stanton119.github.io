@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
-baseurl: "/"
+baseurl: ""
 url: "https://www.richard-stanton.com"
+repository: stanton119/stanton119.github.io
 
 # THEME-SPECIFIC CONFIGURATION
 title: Richard Stanton                                  # site's title
@@ -41,9 +42,9 @@ collections:
   wordpress:
     output: true
     permalink: /:collection/:name
-  perm-pages:
-    output: true
-    permalink: /:collection/:name
+  # perm-pages:
+  #   output: true
+  #   permalink: /:collection/:name
   # portfolio:
   #   output: true
   #   permalink: /:collection/:name

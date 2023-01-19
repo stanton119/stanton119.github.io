@@ -9,6 +9,7 @@ comments: true
 disqus_identifier: https://www.richard-stanton.com/humidity-calculator/
 ---
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         var pastValue, pastSelectionStart, pastSelectionEnd;
