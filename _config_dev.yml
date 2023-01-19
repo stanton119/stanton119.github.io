@@ -1,1 +1,8 @@
-url: http://localhost:4000
+url: "https://www.richard-stanton.com"
+domain: www.richard-stanton.com
+baseurl: /
+repository: stanton119/stanton119.github.io
+
+title: Richard Stanton                                  # site's title
+# remote_theme: mmistakes/minimal-mistakes
+remote_theme: sylhare/Type-on-Strap

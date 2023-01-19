@@ -3,10 +3,10 @@ ARG VARIANT=bullseye
 FROM mcr.microsoft.com/vscode/devcontainers/jekyll:0-${VARIANT}
 
 # install ruby
-RUN sudo apt-get update
-RUN sudo apt-get install ruby-full
+RUN apt-get update && apt-get -y install ruby-full
 # install bundle
-RUN sudo bundle install
+RUN bundle install
+# gem install bundler && bundle install
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="none"
