@@ -14,10 +14,10 @@
 		4000,
 		// Live reload server
 		35729
-	],
+	]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sh .devcontainer/post-create.sh"
+	// "postCreateCommand": "sh .devcontainer/post-create.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
