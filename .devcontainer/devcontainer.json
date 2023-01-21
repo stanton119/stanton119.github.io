@@ -3,7 +3,12 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
+	// "image": "mcr.microsoft.com/devcontainers/jekyll:0-bullseye",
+
+    "build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -14,10 +19,10 @@
 		4000,
 		// Live reload server
 		35729
-	],
+	]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sh .devcontainer/post-create.sh"
+	// "postCreateCommand": "sh .devcontainer/post-create.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
