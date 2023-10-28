@@ -10,7 +10,7 @@ comments: true
 
 Here we will look through TFL cycle data and explore how the number of journeys vary.
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/TFLCycles).
+Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/other/tfl_cycles).
 
 ## Dataset
 The data was provided from TFL and was retrieved from Kaggle:  
