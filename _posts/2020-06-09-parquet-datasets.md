@@ -12,7 +12,7 @@ comments: true
 
 Parquet files are a columinar data format we can use to store dataframes. They can be stored in partitions, which can allow us to load only a subset of the data. This is useful is we are filtering the data, as we can do that without loading it all into memory.
 
-Also on [github](https://github.com/stanton119/data-analysis/tree/master/ParquetDatasets).
+Also on [github](https://github.com/stanton119/data-analysis/blob/master/tools_python/parquet_datasets/parquet_datasets.ipynb).
 
 Import stuff:
 
@@ -179,7 +179,7 @@ heart_data["partition"] = (heart_data["age"] / 10).round().astype(int)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/ParquetDatasets/parquet_datasets_files/parquet_datasets_5_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/tools_python/parquet_datasets/parquet_datasets_files/parquet_datasets_5_0.svg)
 
 
 ## Save data

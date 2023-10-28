@@ -218,8 +218,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_7_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/nba/minutes_played/minutes_played_files/minutes_played_7_0.svg)
 
 
 Comparing against superstars form the last couple decades it is apparent how LeBron has managed to avoid any significant injuries affecting his game time.
@@ -236,8 +235,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_9_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/nba/minutes_played/minutes_played_files/minutes_played_9_0.svg)
 
 
 Comparing against newer/upcoming superstars:
@@ -269,8 +267,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_11_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/nba/minutes_played/minutes_played_files/minutes_played_11_0.svg)
 
 
 Just for fun here's load of players on one unreadable plot:
@@ -285,8 +282,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_13_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/nba/minutes_played/minutes_played_files/minutes_played_13_0.svg)
 
 
 Or as a heat map.
@@ -303,5 +299,4 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/NBA/minutes_played/minutes_played_files/minutes_played_15_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/nba/minutes_played/minutes_played_files/minutes_played_15_0.svg)

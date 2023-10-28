@@ -19,7 +19,7 @@ This follows on from the previous post on fitting a gaussian distribution with p
  References:
    * [https://pyro.ai/examples/svi_part_i.html](https://pyro.ai/examples/svi_part_i.html)
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
+Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/neural_networks/fit_dist_with_pyro).
 
  Import the required libraries:
 

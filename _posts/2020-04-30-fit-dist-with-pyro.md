@@ -15,7 +15,7 @@ comments: true
  References:
    * [https://pyro.ai/examples/intro_part_ii.html](https://pyro.ai/examples/intro_part_ii.html)
 
-Part of a project on [github](https://github.com/stanton119/data-analysis/raw/master/FitDistWithPyro).
+Part of a project on [github](https://github.com/stanton119/data-analysis/tree/master/neural_networks/fit_dist_with_pyro).
 
  Import the required libraries:
 

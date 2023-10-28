@@ -56,7 +56,7 @@ fig = tfds.show_examples(datasets["train"], datasets_info)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_5_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_5_0.svg)
 
 
 ## Data preperation
@@ -186,7 +186,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_13_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_13_0.svg)
 
 
 ## Predictions
@@ -211,7 +211,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_15_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_15_0.svg)
 
 
 After making predictions on the whole test set, we can generate a confusion matrix to show which classes are more commonly confused by the model.
@@ -240,7 +240,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_17_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_17_0.svg)
 
 
 The above matrix shows out of all items - pullovers, shirts and coats are the most confused. There is also some confusion on some sneakers and ankle boots. This all makes sense as those items are more similar.
@@ -256,7 +256,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_19_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_19_0.svg)
 
 
 We can plot some examples of the least confident predictions made by the model:
@@ -279,4 +279,4 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_cnn_files/fashion_cnn_21_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_cnn_files/fashion_cnn_21_0.svg)

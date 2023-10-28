@@ -217,7 +217,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/FashionCNN/fashion_batch_norm_files/fashion_batch_norm_10_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/machine_vision/fashion_cnn/fashion_batch_norm_files/fashion_batch_norm_10_0.svg)
 
 
 # Conclusions

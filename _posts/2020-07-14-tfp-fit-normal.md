@@ -33,8 +33,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/fit_gaussian_tfp_files/fit_gaussian_tfp_3_0.svg)
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/fit_gaussian_tfp_files/fit_gaussian_tfp_3_0.svg)
 
 # Model setup
 Tensorflow probability allows us to fit a network where the final layer output is not a scalar value,
@@ -97,7 +96,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/fit_gaussian_tfp_files/fit_gaussian_tfp_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/fit_gaussian_tfp_files/fit_gaussian_tfp_11_0.svg)
 
 
 # Results
@@ -132,4 +131,4 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/fit_gaussian_tfp_files/fit_gaussian_tfp_13_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/fit_gaussian_tfp_files/fit_gaussian_tfp_13_0.svg)

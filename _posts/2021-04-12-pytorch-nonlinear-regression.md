@@ -60,7 +60,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_3_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_3_0.svg)
     
 
 
@@ -246,13 +246,13 @@ plot_model_results(model_lm, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_10_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_10_0.svg)
     
 
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_10_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_10_1.svg)
     
 
 
@@ -299,13 +299,13 @@ plot_model_results(model_lms, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_13_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_13_0.svg)
     
 
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_13_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_13_1.svg)
     
 
 
@@ -359,13 +359,13 @@ plot_model_results(model_dnm, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_16_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_16_0.svg)
     
 
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_16_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/nonlinear_regression/nonlinear_regression_files/nonlinear_regression_16_1.svg)
     
 
 

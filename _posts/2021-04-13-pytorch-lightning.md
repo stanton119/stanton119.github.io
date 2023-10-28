@@ -52,8 +52,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_3_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_3_0.svg)
 
 
 Next we prep data for PyTorch by converting to Tensors and
@@ -248,13 +247,13 @@ plot_model_results(model_dnm, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_12_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_12_0.svg)
     
 
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_12_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_12_1.svg)
     
 
 
@@ -328,7 +327,7 @@ plot_model_results(model_lightning, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_14_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_14_1.svg)
     
 
 
@@ -414,7 +413,7 @@ plot_model_results(model_lightning, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_18_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_18_1.svg)
     
 
 
@@ -483,7 +482,7 @@ plot_model_results(model_lightning, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_20_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_20_1.svg)
     
 
 
@@ -505,7 +504,7 @@ plot_model_results(model_lightning_load, x_train, y_train)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_22_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/pytorch_lightning/pytorch_lightning_regression_files/pytorch_lightning_regression_22_0.svg)
     
 
 

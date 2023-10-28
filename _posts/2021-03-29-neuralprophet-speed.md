@@ -147,8 +147,7 @@ df_train.head(10)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_3_1.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_3_1.svg)
 
 
 ## How fast is `neuralprophet`?
@@ -244,9 +243,7 @@ fig.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_9_1.svg)
-    
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_9_1.svg)
 
 ## Model results
 The resulting predictions and model components are similar between the two models.
@@ -277,9 +274,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_11_0.svg)
-    
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_11_0.svg)
 
 
 ```python
@@ -297,9 +292,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_12_0.svg)
-  
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_12_0.svg)
 
 Both models decompose to give seasonal components. They are similar between the two.
 Note the weekly seasonality scale is small - we wouldn't expect temperature to have a weekly seasonality at all.
@@ -328,4 +321,4 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_14_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/neural_prophet_speed_test_files/neural_prophet_speed_test_14_0.svg)

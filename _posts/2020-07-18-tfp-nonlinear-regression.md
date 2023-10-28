@@ -55,7 +55,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_3_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_3_0.svg)
 
 
 ## Linear regression approach
@@ -83,7 +83,7 @@ print(f"""Final loss: {history.history["loss"][-1]:0.2f}""")
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_5_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_5_0.svg)
 
 
     Final loss: 5.25
@@ -131,7 +131,7 @@ plot_model_results(model_lin_reg, x_train, y_train, tfp_model=False)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_9_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_9_0.svg)
 
 
 ## Tensorflow probability
@@ -168,7 +168,7 @@ plot_model_results(model_lin_reg_tfp, x_train, y_train, tfp_model=True)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_11_0.svg)
 
 
 ## Fit linear regression with its standard deviation
@@ -203,7 +203,7 @@ plot_model_results(model_lin_reg_std_tfp, x_train, y_train, tfp_model=True)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_13_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_13_0.svg)
 
 
 The above plot shows that both the standard deviation and mean are tuned differently to before.
@@ -242,7 +242,7 @@ plot_model_results(model_lin_reg_std_nn_tfp, x_train, y_train, tfp_model=True)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_15_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_15_0.svg)
 
 
 The fitted means from the neural network model follow the data non-linearity much better than the linear regression case.
@@ -351,7 +351,7 @@ plot_model_results(model_relu, x_train, y_train)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_19_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_19_0.svg)
 
 
 Then with softplus:
@@ -382,7 +382,7 @@ plot_model_results(model_softplus, x_train, y_train)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowProbability/nonlinear_regression_files/nonlinear_regression_21_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/tensorflow_probability/nonlinear_regression_files/nonlinear_regression_21_0.svg)
 
 
 We can see that the sigmoid based network has the best performance:

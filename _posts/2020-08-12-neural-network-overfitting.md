@@ -37,8 +37,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowStuff/overfitting_nn_files/overfitting_nn_3_0.svg)
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/overfitting_nn/overfitting_nn_files/overfitting_nn_3_0.svg)
 
 Lets try fit this with a neural network. The network is deliberating over complex with over **40,000 parameters** to tune and the relu activation function for non-linearity.
 
@@ -102,7 +101,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowStuff/overfitting_nn_files/overfitting_nn_6_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/overfitting_nn/overfitting_nn_files/overfitting_nn_6_0.svg)
 
 
 If we make predictions from the overly complex neural network we would expect some drastically overfit results...
@@ -120,7 +119,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowStuff/overfitting_nn_files/overfitting_nn_8_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/overfitting_nn/overfitting_nn_files/overfitting_nn_8_0.svg)
 
 
 The results are pretty reasonable! There isnt a crazy line that passing through all our points.
@@ -161,7 +160,7 @@ y_linear_eval = model_linear.predict(x_eval)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowStuff/overfitting_nn_files/overfitting_nn_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/overfitting_nn/overfitting_nn_files/overfitting_nn_11_0.svg)
 
 
 
@@ -175,7 +174,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TensorflowStuff/overfitting_nn_files/overfitting_nn_12_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/overfitting_nn/overfitting_nn_files/overfitting_nn_12_0.svg)
 
 
 The two models look pretty similar. For more details on why this is the case - please refer to the paper in the introduction.

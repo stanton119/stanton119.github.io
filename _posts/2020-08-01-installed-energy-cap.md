@@ -336,7 +336,7 @@ max_cap.head(10)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/EnergyCapacity/installed_energy_capacity_files/installed_energy_capacity_7_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/energy_capacity/installed_energy_capacity_files/installed_energy_capacity_7_1.svg)
 
 
 Germany in this dataset is much larger than other countries, and there is a fast fall off with the small countries.
@@ -398,7 +398,7 @@ for idx, table_idx in enumerate(sort_idx[:16]):
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/EnergyCapacity/installed_energy_capacity_files/installed_energy_capacity_10_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/energy_capacity/installed_energy_capacity_files/installed_energy_capacity_10_0.svg)
 
 
 Of the bigger countries - new energy capacity in Germany and France have been moving in the right direction, but the fossils have not reduced much. Italy has been moving in the wrong direction, installing more fossil fuels. The UK has also increased it capacity of fossil fuels.
@@ -476,7 +476,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/EnergyCapacity/installed_energy_capacity_files/installed_energy_capacity_14_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/energy_capacity/installed_energy_capacity_files/installed_energy_capacity_14_0.svg)
 
 
 Germany has installed a log more wind and solar power which has increased in renewables. France has increased in wind power.

@@ -147,8 +147,7 @@ df_train.head(10)
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_3_1.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_3_1.svg)
 
 
 Now let's fit two sets of models. The first is an ARIMA model from `statsmodels` the second is an approximate AR model using `NeuralProphet`.
@@ -208,8 +207,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_7_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_7_0.svg)
 
 
 ## Prediction results
@@ -355,8 +353,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_10_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_10_0.svg)
 
 
 Their coefficients are nearly identical. As such predictions from each model are nearly the same:
@@ -387,8 +384,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_12_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_12_0.svg)
 
 
 ## Long lags
@@ -444,8 +440,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_16_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_16_0.svg)
 
 
 Even though, we can train for much more epochs and still successfully train a very long AR model.
@@ -481,8 +476,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_18_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_18_0.svg)
 
 
 The prediction shows we are able to capture some of the yearly seasonality!
@@ -624,8 +618,7 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_22_0.svg)
-    
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_22_0.svg)
 
 
 
@@ -652,4 +645,4 @@ plt.show()
 
 
     
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/TimeSeries/neural_prophet/arima_files/arima_23_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/time_series/neural_prophet/arima_files/arima_23_0.svg)
