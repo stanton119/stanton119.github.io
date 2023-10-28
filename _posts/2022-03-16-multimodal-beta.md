@@ -45,8 +45,7 @@ plt.show()
 
 ```
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_2_0.png)
-    
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_2_0.png)
 
 
 ## Creating a PyTorch model
@@ -148,7 +147,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_8_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_8_0.png)
     
 
 
@@ -234,7 +233,7 @@ plt.plot(moving_average(np.array(model.train_log_error)))
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_14_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_14_1.png)
     
 
 
@@ -257,7 +256,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_16_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/multimodal_beta_pytorch/multimodal_beta_files/multimodal_beta_16_0.png)
     
 
 

@@ -73,8 +73,7 @@ display(Image(filename="causal_model.png"))
 ```
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/CausalInference/causal_regression_coefficient_files/causal_regression_coefficient_4_0.png)
-    
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/causal_inference/causal_regression_coefficient_files/causal_regression_coefficient_4_0.png)
 
 
 Fitting a linear regression model will let us estimate the coefficients and therefore treatment effect.
@@ -244,7 +243,7 @@ display(Image(filename="causal_model.png"))
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/CausalInference/causal_regression_coefficient_files/causal_regression_coefficient_10_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/causal_inference/causal_regression_coefficient_files/causal_regression_coefficient_10_0.png)
     
 
 
@@ -406,7 +405,7 @@ display(Image(filename="causal_model.png"))
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/CausalInference/causal_regression_coefficient_files/causal_regression_coefficient_15_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/causal_inference/causal_regression_coefficient_files/causal_regression_coefficient_15_0.png)
     
 
 

@@ -63,7 +63,7 @@ game.plot_state()
 game.animate("vid.gif")
 ```
 
-![gif](https://raw.githubusercontent.com/stanton119/data-analysis/master/game_of_life/vid.gif)
+![gif](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/other/game_of_life/vid.gif)
 
 
 You can try larger grid sizes as well:
@@ -76,4 +76,4 @@ game.animate("vid_large.gif")
 ```
 
 Full code available here:  
-[https://github.com/stanton119/data-analysis/tree/master/game_of_life](https://github.com/stanton119/data-analysis/tree/master/game_of_life)
+[https://github.com/stanton119/data-analysis/tree/master/other/game_of_life](https://github.com/stanton119/data-analysis/tree/master/other/game_of_life)

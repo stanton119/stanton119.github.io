@@ -55,8 +55,7 @@ for col in range(0,4):
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/pca_files/pca_3_0.png)
-    
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/pca_files/pca_3_0.png)
 
 
 ## Running PCA
@@ -177,13 +176,13 @@ ax.set_ylabel("MSE")
 ```
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/pca_files/pca_9_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/pca_files/pca_9_1.png)
     
 
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/pca_files/pca_9_2.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/pca_files/pca_9_2.png)
     
 
 
@@ -215,7 +214,7 @@ for row, n_components in enumerate([5, 10, 50, 200]):
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/pca_files/pca_11_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/pca_files/pca_11_0.png)
     
 
 
@@ -255,7 +254,7 @@ ax.set_ylabel("MSE")
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/pca_files/pca_13_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/pca_files/pca_13_1.png)
     
 
 

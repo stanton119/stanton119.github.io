@@ -83,7 +83,7 @@ fig
 ```
 
 
-![svg](https://github.com/stanton119/data-analysis/raw/master/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_5_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_5_0.svg)
 
 
 ## Perfect strategy
@@ -247,7 +247,7 @@ plt.show()
 ```
 
 
-![svg](https://github.com/stanton119/data-analysis/raw/master/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_19_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_19_0.svg)
 
 
 ## Simulations
@@ -335,4 +335,4 @@ plt.show()
 ```
 
 
-![svg](https://github.com/stanton119/data-analysis/raw/master/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_25_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/recommenders/multi_armed_bandits_benchmarks/multi_armed_bandits_files/multi_armed_bandits_25_0.svg)

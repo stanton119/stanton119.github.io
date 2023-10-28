@@ -52,8 +52,7 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_3_1.svg)
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_3_1.svg)
 
 Next we prep data for PyTorch by converting to Tensors and
 creating dataloaders.
@@ -183,7 +182,7 @@ plot_convergence(model.train_log)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_9_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_9_1.svg)
 
 
 Now we fit an equivalent model in `sklearn`.
@@ -219,7 +218,7 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_13_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_13_1.svg)
 
 
 ## Ridge regression
@@ -267,7 +266,7 @@ plot_convergence(model.train_log)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_15_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_15_1.svg)
 
 
 To fit an equivalent model in `sklearn` we need to adjust the regularisation value a bit.
@@ -307,7 +306,7 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_19_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_19_1.svg)
 
 
 ## Lasso regression
@@ -355,7 +354,7 @@ plot_convergence(model.train_log)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_21_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_21_1.svg)
 
 
 To fit an equivalent model in `sklearn` the alpha value we need is out by a factor of 2.
@@ -394,7 +393,7 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_25_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_25_1.svg)
 
 
 ## ElasticNet regression
@@ -443,7 +442,7 @@ plot_convergence(model.train_log)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_27_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_27_1.svg)
 
 
 For `sklearn` the loss function is given as:
@@ -489,5 +488,5 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/PyTorchStuff/elastic_net/elastic_linear_files/elastic_linear_31_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/elastic_net/elastic_linear_files/elastic_linear_31_1.svg)
 

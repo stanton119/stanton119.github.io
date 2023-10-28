@@ -10,7 +10,7 @@ Dask is commonly used for data processing in parallel compute.
 However I wanted to quickly explore using `dask` for parallel processing of generic python functions.
 
 Full script available at:
-[https://github.com/stanton119/data-analysis/blob/master/parallel_processing/dask_vs_multiprocessing.py](https://github.com/stanton119/data-analysis/blob/master/parallel_processing/dask_vs_multiprocessing.py)
+[https://github.com/stanton119/data-analysis/tree/master/tools_python/parallel_processing/dask_vs_multiprocessing.py](https://github.com/stanton119/data-analysis/tree/master/tools_python/parallel_processing/dask_vs_multiprocessing.py)
 
 This can apply to functions like making http requests etc..
 If we need to make a series of requests, running those within a for loop etc. would be fairly slow as we wait for a response for each call before moving on.

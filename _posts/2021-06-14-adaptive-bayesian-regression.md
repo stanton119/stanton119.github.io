@@ -56,8 +56,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_4_0.svg)
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_4_0.svg)
 
 ## Fit a linear regression with `statsmodels`
 We fit a standard linear regression model with `statsmodels`:
@@ -134,7 +133,7 @@ fig.show()
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_8_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_8_1.svg)
 
 
 ## Sequential bayesian regression
@@ -252,7 +251,7 @@ plot_seq_results(params_mu_seq, params_std_seq)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_14_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_14_1.svg)
 
 
 The coefficients do drift in the correct direction with row number,
@@ -298,7 +297,7 @@ plot_seq_results(params_mu_seq, params_std_seq)
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_16_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_16_1.svg)
 
 
 ### Step changes
@@ -334,7 +333,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_18_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_18_0.svg)
 
 
 We can see the model coefficients respond to the step change.
@@ -366,4 +365,4 @@ plot_seq_results(params_mu_seq, params_std_seq)
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/adaptive_coefficients_files/adaptive_coefficients_20_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/adaptive_coefficients_files/adaptive_coefficients_20_1.svg)

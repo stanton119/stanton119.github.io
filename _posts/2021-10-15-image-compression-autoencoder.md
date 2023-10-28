@@ -204,8 +204,7 @@ for n_latent in latent_space_dim:
     Epoch 9: 100%|██████████| 938/938 [00:18<00:00, 50.20it/s, loss=0.0158, v_num=48]
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_7_19.png)
-
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_7_19.png)
 
 
 ## Results
@@ -296,7 +295,7 @@ fig.legend()
 ```
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_13_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_13_1.png)
     
 
 
@@ -352,7 +351,7 @@ fig.legend()
 ```
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_15_2.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_15_2.png)
     
 
 
@@ -385,7 +384,7 @@ for row, n_latent in enumerate(latent_space_dim[:4]):
 ```
 
 
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_17_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_17_0.png)
     
 The same for the autoencoder:
 
@@ -407,7 +406,7 @@ for row, n_latent in enumerate(latent_space_dim[:4]):
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_19_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_19_0.png)
     
 
 
@@ -462,7 +461,7 @@ fig.legend()
 ```
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/PyTorchStuff/autoencoders/autoencoder_files/autoencoder_21_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/autoencoders/autoencoder_files/autoencoder_21_1.png)
     
 
 

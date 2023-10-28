@@ -126,8 +126,7 @@ plt.legend()
 plt.show()
 ```
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_9_0.svg)
-
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_9_0.svg)
 
 We can also show that with increasing data our estimates of the coefficients become more confident
 as the standard error shrinks.
@@ -145,7 +144,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_11_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_11_0.svg)
 
 
 ## Sequential bayesian regression
@@ -290,7 +289,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_19_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_19_0.svg)
 
 
 The model coefficients behave as before.
@@ -308,7 +307,7 @@ plt.show()
 ```
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_21_0.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_21_0.svg)
 
 
 ### Posteriors vs Priors
@@ -355,7 +354,7 @@ for idx in range(m + 1):
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_23_1.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_23_1.svg)
 
 
 ### Prediction uncertainty
@@ -397,7 +396,7 @@ ax.fill_between(
 
 
 
-![svg](https://raw.githubusercontent.com/stanton119/data-analysis/master/SequentialBayesianRegression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_25_2.svg)
+![svg](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/regression/sequential_bayesian_regression/sequential_bayesian_linear_regression_files/sequential_bayesian_linear_regression_25_2.svg)
 
 
 ### Adaptive learning

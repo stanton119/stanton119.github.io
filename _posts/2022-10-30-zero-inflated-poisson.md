@@ -57,7 +57,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_2_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_2_1.png)
 
 
 ## Creating a PyTorch model
@@ -168,7 +168,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_8_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_8_0.png)
     
 
 
@@ -262,7 +262,7 @@ fig.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_14_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_14_1.png)
     
 
 
@@ -286,7 +286,7 @@ fig.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_15_1.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_15_1.png)
     
 
 
@@ -315,7 +315,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_17_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_17_0.png)
     
 
 
@@ -691,7 +691,7 @@ plt.show()
 
 
     
-![png](https://github.com/stanton119/data-analysis/raw/master/FittingMultimodalDistributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_27_0.png)
+![png](https://raw.githubusercontent.com/stanton119/data-analysis/markdown/neural_networks/fitting_multimodal_distributions/zero_inflated_poisson_pytorch/zero_inflated_poisson_files/zero_inflated_poisson_27_0.png)
     
 
 
